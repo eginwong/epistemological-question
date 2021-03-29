@@ -14,10 +14,10 @@ function Header() {
   `);
 
   return (
-    <header className="bg-green-700">
+    <header className="bg-gray-50">
       <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
         <Link to="/">
-          <h1 className="flex items-center text-white no-underline">
+          <h1 className="flex items-center text-black no-underline">
             <svg
               className="w-8 h-8 mr-2 fill-current"
               height="54"
@@ -34,7 +34,7 @@ function Header() {
         </Link>
 
         <button
-          className="items-center block px-3 py-2 text-white border border-white rounded md:hidden"
+          className="items-center block px-3 py-2 text-black border border-white rounded md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
@@ -58,12 +58,12 @@ function Header() {
               title: `About`,
             },
             {
-              route: `/contact`,
-              title: `Contact`,
+              route: `/bibliography`,
+              title: `Bibliography`,
             },
           ].map((link) => (
             <Link
-              className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6"
+              className="block mt-4 text-black no-underline md:inline-block md:mt-0 md:ml-6"
               key={link.title}
               to={link.route}
             >
