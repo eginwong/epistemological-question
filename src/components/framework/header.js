@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import ConfusedAvatar from "../../images/confused.png";
 
 const greyScaleStyle = {
-  WebkitFilter: "grayscale(100%)", /* Safari 6.0 - 9.0 */
-  Filter: "greyscale(100%)"
-}
+  WebkitFilter: "grayscale(100%)" /* Safari 6.0 - 9.0 */,
+  Filter: "greyscale(100%)",
+};
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -24,10 +24,12 @@ function Header() {
       <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
         <Link to="/">
           <h1 className="flex items-center text-black no-underline">
-            <img src={ConfusedAvatar}
-                className="w-8 h-8 mr-2 fill-current"
-                style={greyScaleStyle}
-                alt="Confused person icon" />
+            <img
+              src={ConfusedAvatar}
+              className="w-8 h-8 mr-2 fill-current"
+              style={greyScaleStyle}
+              alt="Confused person icon"
+            />
             <span className="text-xl font-bold tracking-tight">
               {site.siteMetadata.title}
             </span>

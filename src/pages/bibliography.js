@@ -8,6 +8,8 @@ import biblio from "../data/bibliography.json";
 import dogIllustration from "../images/dog-illustration.svg";
 
 function BibliographyPage() {
+  // sort alphabetically
+  biblio.entries.sort((el1, el2) => el1.author.localeCompare(el2.author));
   return (
     <Layout>
       <SEO
@@ -18,17 +20,22 @@ function BibliographyPage() {
         Annotated Bibliography
       </h1>
       <section>
-        {biblio.entries.map((e) => (
+        {biblio.entries.map((e, id) => (
           <ReferenceCard
-            key={e.id}
+            key={id}
             annotation={
-              <span>
-                {e.author}.{` "${e.source}. "`}
-                <span style={{ fontStyle: "italic" }}>
-                  {e.publish}
+              e.sourceType === "web" ? (
+                <span>
+                  {e.author}.{` "${e.source} "`} At {e.siteName}, {e.publish},
+                  at {e.webUrl}.
                 </span>
-                {e.contents ? `: ${e.contents}` : ""}
-              </span>
+              ) : (
+                <span>
+                  {e.author}.{` "${e.source}. "`}
+                  <span style={{ fontStyle: "italic" }}>{e.publish}</span>
+                  {e.contents ? `: ${e.contents}` : ""}
+                </span>
+              )
             }
             description={e.description}
           />

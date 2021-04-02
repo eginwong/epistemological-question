@@ -1,36 +1,13 @@
 {
   "entries": [
     {
-      "id": 1,
-      "author": "Harrison, D. J",
-      "source": "Using the Moral Language of Cultures to Dialogue",
-      "publish": "Social Justice Review, 100 (2009)",
-      "contents": "142-146",
-      "description": "An examination of the use of Natural Law to enable interfaith dialogue, which is pertinent to my research because it addresses communication between peoples of different backgrounds."
-    },
-    {
-      "id": 2,
-      "author": "Lamott, Anne",
-      "source": "Bird by Bird: Some Instructions on Writing and Life",
-      "publish": "Anchor Books, 1995",
-      "contents": "142-146",
-      "description": "Lamott's book offers honest advice on the nature of a writing life, complete with its insecurities and failures. Taking a humorous approach to the realities of being a writer, the chapters in Lamott's book are wry and anecdotal and offer advice on everything from plot development to jealousy, from perfectionism to struggling with one's own internal critic."
-    },
-    {
-      "id": 3,
-      "author": "Leung, Phoebe",
-      "source": "Bird by boo: Some Instructions on Writing and Life",
-      "publish": "Popwow Books, 1995",
-      "contents": "142-146",
-      "description": "Leung's book offers honest advice on the nature of a writing life, complete with its insecurities and failures. Taking a humorous approach to the realities of being a writer, the chapters in Lamott's book are wry and anecdotal and offer advice on everything from plot development to jealousy, from perfectionism to struggling with one's own internal critic."
-    },
-    {
-      "id": 4,
-      "author": "Seepersad, Dominik",
-      "source": "Bird by boo: bokeaokpwaef",
-      "publish": "Popwow Books, 2021",
-      "contents": "142-146",
-      "description": "Leung's book offers honwhowhow dai of a writing life, complete with its insecurities and failures. Taking a humorous approach to the realities of being a writer, the chapters in Lamott's book are wry and anecdotal and offer advice on everything from plot development to jealousy, from perfectionism to struggling with one's own internal critic."
+      "sourceType": "web",
+      "author": "Burkeman, Oliver",
+      "source": "Why can’t the world’s greatest minds solve the mystery of consciousness?",
+      "siteName": "The Guardian",
+      "publish": "21 January 2015",
+      "webUrl": "https://www.theguardian.com",
+      "description": "Burkeman's long form article walks through the modern understanding of the problem of consciousness. As part of my research, the text provides insight into how the foundation of knowledge can be applied to contemporary challenges of identity and its associated implications."
     }
   ]
 }

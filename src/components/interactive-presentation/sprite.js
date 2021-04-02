@@ -1,9 +1,9 @@
 import React from "react";
 import "./sprite.css";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 // TODO: refactor as enum
-function Sprite({spriteState}) {
+function Sprite({ spriteState }) {
   return (
     <section className="interaction py-8">
       <div className={`sprite ${spriteState}`}></div>
@@ -12,7 +12,7 @@ function Sprite({spriteState}) {
 }
 
 Sprite.propTypes = {
-  spriteState: PropTypes.string.isRequired
-}
+  spriteState: PropTypes.string.isRequired,
+};
 
 export default Sprite;

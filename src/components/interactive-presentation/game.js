@@ -2,65 +2,91 @@ import React, { useState } from "react";
 import Stepper from "./stepper";
 import Slide from "./slide";
 import Sprite from "./sprite";
-import KeyDownFunctional from "./key-down-functional";
 import "./game.css";
+
+/**
+ * need to save some css from getting stripped!
+ * PurgeCSS:
+ * bg-red-400
+ * bg-green-400
+ * bg-yellow-400
+ * bg-gray-400
+ * bg-purple-400
+ * bg-indigo-400
+ * bg-blue-400
+ * bg-pink-400
+ *
+ */
 
 function Game() {
   const [slideNumber, setSlideNumber] = useState(0);
   // const [spriteAnimation, setSpriteAnimation] = useState('idle');
 
-  const slideContents = [
+  const createSlideContents = (id, color, contents) => {
+    return (
+      <React.Fragment key={id}>
+        <h2
+          className={`inline-block text-content p-3 mb-4 text-2xl font-bold bg-${color}-400`}
+        >
+          {contents}
+        </h2>
+      </React.Fragment>
+    );
+    //   <React.Fragment key={3}>
+    //   <div className="flex">
+    //     <h2 className="inline-block text-content p-3 mb-4 text-2xl font-bold bg-indigo-400">
+
+    //     </h2>
+    //     <img src="https://www.sapaviva.com/wp-content/uploads/2017/06/53S.-Ren%C3%A9-Descartes-1596-1650-316x316.jpg"></img>
+    //   </div>
+    // </React.Fragment>
+  };
+  const slideData = [
     {
-      id: 0,
-      content: (
-        <React.Fragment key={0}>
-          <h2 className="inline-block text-content p-3 mb-4 text-2xl font-bold bg-yellow-400">
-            Use ◀️ and ▶️ keys!
-          </h2>
-        </React.Fragment>
-      )
+      color: "yellow",
+      text: "Use ◀️ and ▶️ keys!",
     },
     {
-      id: 1,
-      content: (
-        <React.Fragment key={1}>
-          <h2 className="inline-block text-content p-3 mb-4 text-2xl font-bold bg-red-400">
-            Slide 2
-          </h2>
-        </React.Fragment>
-      )
+      color: "red",
+      text: "What is the mind body problem?",
     },
     {
-      id: 2,
-      content: (
-        <React.Fragment key={2}>
-          <h2 className="inline-block text-content p-3 mb-4 text-2xl font-bold bg-red-400">
-            Slide 3
-          </h2>
-        </React.Fragment>
-      )
+      color: "pink",
+      text:
+        "Context: What is the relevance of the mind-body problem to daily life, media?",
     },
     {
-      id: 3,
-      content: (
-        <React.Fragment key={3}>
-          <h2 className="inline-block text-content p-3 mb-4 text-2xl font-bold bg-orange-400">
-            Slide 4
-          </h2>
-        </React.Fragment>
-      )
+      color: "indigo",
+      text:
+        "Response: Man's questioning existence bridges the ontological gap between what is in our minds and what is objective and real.",
     },
     {
-      id: 4,
-      content: (
-        <React.Fragment key={4}>
-          <h2 className="inline-block text-content p-3 mb-4 text-2xl font-bold bg-green-400">
-            Slide 5
-          </h2>
-        </React.Fragment>
-      )
-    }
+      color: "green",
+      text: "What are the roots of the mind-body problem? Cartesian Dualism",
+    },
+    {
+      color: "blue",
+      text: "(think about syllogism to explain argument and dissect premises)",
+    },
+    {
+      color: "purple",
+      text:
+        "Reflect upon Gallagher's/Heidegger's idea of _the question_ as the irreducible beginning",
+    },
+    {
+      color: "gray",
+      text: "Exposition",
+    },
+    {
+      color: "blue",
+      text: "Conclusion",
+    },
   ];
+
+  const slideContents = slideData.map((val, id) => ({
+    id,
+    content: createSlideContents(id, val.color, val.text),
+  }));
 
   // const keyHandlerToSpriteState = (key) => {
   //   if (["ArrowLeft", "ArrowRight"].includes(key)) {
@@ -73,14 +99,11 @@ function Game() {
   return (
     <>
       <Slide>{slideContents[slideNumber].content}</Slide>
-      <KeyDownFunctional keyHandler={() => console.log('hello')}>
-        <Sprite spriteState={'idle'} />
-      </KeyDownFunctional>
+      <Sprite spriteState={"idle"} />
       <Stepper
-        maxCount={4}
+        maxCount={slideContents.length - 1}
         changeCallback={(e) => setSlideNumber(e.target.value)}
       />
-      <KeyDownFunctional />
     </>
   );
 }

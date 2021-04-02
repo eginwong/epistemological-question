@@ -1,17 +1,17 @@
-@-webkit-keyframes idle-anim{
-  0%{
+@-webkit-keyframes idle-anim {
+  0% {
     background-position: 0px -2px;
   }
-  100%{
+  100% {
     background-position: -128px -2px;
   }
 }
 
-@-webkit-keyframes walk-anim{
-  0%{
+@-webkit-keyframes walk-anim {
+  0% {
     background-position: 0px -36px;
   }
-  100%{
+  100% {
     background-position: -192px -36px;
   }
 }
@@ -27,19 +27,19 @@
   height: 32px;
   transform: scale(2);
   background-repeat: no-repeat;
-  background-image: url('../../images/hero-spritesheet.png');
+  background-image: url("../../images/hero-spritesheet.png");
   image-rendering: pixelated;
-  
+
   -webkit-animation: idle-anim 0.8s steps(4) infinite;
   animation: idle-anim 0.8s steps(4) infinite;
 }
 
 .walk {
-  -webkit-animation: walk-anim .9s steps(6) infinite;
-  -moz-animation: walk-anim .9s steps(6) infinite;
-  -ms-animation: walk-anim .9s steps(6) infinite;
-  -o-animation: walk-anim .9s steps(6) infinite;
-  animation: walk-anim .9s steps(6) infinite;
+  -webkit-animation: walk-anim 0.9s steps(6) infinite;
+  -moz-animation: walk-anim 0.9s steps(6) infinite;
+  -ms-animation: walk-anim 0.9s steps(6) infinite;
+  -o-animation: walk-anim 0.9s steps(6) infinite;
+  animation: walk-anim 0.9s steps(6) infinite;
 }
 
 /* @-webkit-keyframes walk {

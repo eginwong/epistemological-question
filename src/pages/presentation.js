@@ -12,7 +12,6 @@ function PresentationPage() {
         title="Presentation"
       />
       <Game />
-
     </Layout>
   );
 }

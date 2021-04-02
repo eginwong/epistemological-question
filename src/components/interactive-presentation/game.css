@@ -1,4 +1,4 @@
-.container { 
+.container {
   width: 100%;
   height: 100%;
   overflow: hidden; /* for scrolling */
@@ -16,14 +16,14 @@
   }
 } */
 
-.background {
-  background: url('../../images/full-background.png') repeat;
-  /* background: url('./assets/dark-sky-background.png') repeat; */
+/* .background {
+  background: url("../../images/full-background.png") repeat;
+  background: url('./assets/dark-sky-background.png') repeat;
   height: 100%;
   width: 5076px;
   position: fixed;
   animation: slide 100s linear infinite;
-}
+} */
 
 /* Safari and Chrome */
 /* @-webkit-keyframes scene1-bg-anim
