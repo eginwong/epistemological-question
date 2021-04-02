@@ -21,24 +21,7 @@ function BibliographyPage() {
       </h1>
       <section>
         {biblio.entries.map((e, id) => (
-          <ReferenceCard
-            key={id}
-            annotation={
-              e.sourceType === "web" ? (
-                <span>
-                  {e.author}.{` "${e.source} "`} At {e.siteName}, {e.publish},
-                  at {e.webUrl}.
-                </span>
-              ) : (
-                <span>
-                  {e.author}.{` "${e.source}. "`}
-                  <span style={{ fontStyle: "italic" }}>{e.publish}</span>
-                  {e.contents ? `: ${e.contents}` : ""}
-                </span>
-              )
-            }
-            description={e.description}
-          />
+          <ReferenceCard key={id} annotation={e} />
         ))}
       </section>
 

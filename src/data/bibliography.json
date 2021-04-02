@@ -6,8 +6,46 @@
       "source": "Why can’t the world’s greatest minds solve the mystery of consciousness?",
       "siteName": "The Guardian",
       "publish": "21 January 2015",
-      "webUrl": "https://www.theguardian.com",
+      "webUrl": "www.theguardian.com",
       "description": "Burkeman's long form article walks through the modern understanding of the problem of consciousness. As part of my research, the text provides insight into how the foundation of knowledge can be applied to contemporary challenges of identity and its associated implications."
+    },
+    {
+      "sourceType": "web",
+      "author": "Westphal, Jonathan",
+      "source": "Descartes and the Discovery of the Mind-Body Problem.",
+      "siteName": "The MIT Press Reader",
+      "publish": "8 August 2018",
+      "webUrl": "thereader.mitpress.mit.edu",
+      "description": "Westphal provides another perspective on the modern view of the mind-body problem and its implications. This text serves as further evidence to the importance of the subject matter and what objections we expect to encounter upon proposing a solution."
+    },
+    {
+      "sourceType": "blog",
+      "author": "Blair, Peter",
+      "source": "What We Are: Mind, Body, and the Dangers of Dualism.",
+      "siteName": "Patheos",
+      "publish": "4 September 2013",
+      "webUrl": "www.patheos.com",
+      "description": "Blair opines the Christian view against Cartesian dualism. He asserts the hylemorphic nature of man as the bridge between subjective and objective realities, similar to Gallagher's theory of man as questioning existence."
+    },
+    {
+      "sourceType": "book",
+      "author": "Gallagher, Kenneth T",
+      "source": "The Philosophy of Knowledge",
+      "edition": "2nd. ed",
+      "publisher": "New York: Fordham University Press",
+      "publishDate": "1982",
+      "chapter": "The Point of Departure.",
+      "pages": "44-67",
+      "description": "Gallagher provides an overview of the key areas regarding the bipolarity of consciousness and its resolution through the viewpoints of prominent modern philosophers such as Martin Heidegger and Gabriel Marcel."
+    },
+    {
+      "sourceType": "web-encyclopedia",
+      "author": "Robinson, Howard",
+      "pageTitle": "Dualism.",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "editor": "Edward N. Zalta",
+      "webUrl": "plato.stanford.edu",
+      "description": "Robinson systematically categorizes the ambiguity of the mind-body problem into distinct realms within philosophy. This source allows the presentation to precisely address a particular aspect of the mind-body problem with the irreducible beginning as the question."
     }
   ]
 }
