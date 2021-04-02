@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import Layout from "../components/framework/layout";
 import SEO from "../components/framework/seo";
 import ReferenceCard from "../components/reference-card";
 import biblio from "../data/bibliography.json";
+import dogIllustration from "../images/dog-illustration.svg";
 
 function BibliographyPage() {
   return (
@@ -32,6 +34,17 @@ function BibliographyPage() {
           />
         ))}
       </section>
+
+      <div className="flex justify-center">
+        <figure className="w-2/3 md:w-1/3">
+          <img alt="A dog relaxing" src={dogIllustration} />
+          <Link to="/presentation">
+            <figcaption className="block mt-4 text-xs font-bold text-center uppercase">
+              Doggo has a question
+            </figcaption>
+          </Link>
+        </figure>
+      </div>
     </Layout>
   );
 }

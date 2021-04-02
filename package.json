@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
+  "name": "man-questioning-existence",
+  "description": "PHS 611 Multimedia Project",
   "version": "5.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "author": "Eric Wong",
   "dependencies": {
     "gatsby": "2.25.1",
     "gatsby-plugin-manifest": "2.12.1",
