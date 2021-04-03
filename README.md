@@ -1,3 +1,36 @@
+## Objective
+Have free form in the beginning and then have autoplay
+
+## Architecture
+- Main Components
+  - `Game`: Wrapper for all logic
+  - `Background`: Controls view that corresponds to stepper and slide
+  - `Stepper`: Controls state of which slide we are currently on
+  - `Sprite`: Sprite entity for movements and visual cues
+  - `Slide`: Slide entity with text, images, and text
+- Miscellaneous
+  - `Reference-Card`: for annotated bibliography
+
+## TODOs
+- sprite
+  - ~~pass spriteState as string to modify animation~~
+  - (optional): choreograph actions in sprite tied to sprite state
+- slide
+  - load slides object
+  - include imgs as part of slides object
+  - styling with quotations
+  - ~~take input~~
+- stepper
+  - style slider to be hidden
+  - ~~add slider to RHS to allow skipping ahead~~
+- sandbox
+  - create a sandbox for playing with the sprite
+- background component
+  - create background
+  - transition backgrounds
+- game
+  - ~~orchestrate slide component~~
+
 # Gatsby Starter Tailwind
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors)

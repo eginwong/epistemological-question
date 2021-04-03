@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import Layout from "../components/framework/layout";
 import SEO from "../components/framework/seo";
-import Game from "../components/interactive-presentation/game";
+import Sandbox from "../components/interactive-presentation/sandbox";
 
 function IndexPage() {
   return (
@@ -14,24 +14,23 @@ function IndexPage() {
       />
 
       <div className="sm:text-center lg:text-left">
-        <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-          <span className="block xl:inline">
+        <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-5xl">
+          <span className="xl:inline">
             {
-              "?: Man's Questioning Existence as a Response to the Ontological Aspect of "
+              "?: Man's Questioning Existence as a Response to the Ontological Aspect of the "
             }
           </span>
-          <br />
-          <span className="block text-indigo-600 xl:inline">
-            the Mind-Body Problem
+          <span className="text-indigo-600 md:text-6xl">
+            Mind-Body
           </span>
+          <span> Problem</span>
         </h1>
-        <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-          A philosophical exploration into why we are more than just brains in a
-          container.
+        <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+          A philosophical exploration into why we are more than just a 🧠 in a container.
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
-          <Link
+            <Link
               to="/presentation"
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
             >
@@ -63,9 +62,8 @@ function IndexPage() {
         </div>
       </div>
 
-      <Game />
+      <Sandbox />
 
-      {/* create a component for this */}
       <section className="text-gray-600 body-font hidden">
         <div className="container px-5 py-10 mx-auto">
           <h1 className="text-3xl font-medium title-font text-gray-900 mb-12 text-center">
@@ -84,9 +82,9 @@ function IndexPage() {
                 </svg>
                 <p className="leading-relaxed mb-6">
                   Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                  carry neutra before they sold out fixie 90s microdosing.
-                  Tacos pinterest fanny pack venmo, post-ironic heirloom
-                  try-hard pabst authentic iceland.
+                  carry neutra before they sold out fixie 90s microdosing. Tacos
+                  pinterest fanny pack venmo, post-ironic heirloom try-hard
+                  pabst authentic iceland.
                 </p>
                 <a className="inline-flex items-center">
                   <img
@@ -115,9 +113,9 @@ function IndexPage() {
                 </svg>
                 <p className="leading-relaxed mb-6">
                   Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                  carry neutra before they sold out fixie 90s microdosing.
-                  Tacos pinterest fanny pack venmo, post-ironic heirloom
-                  try-hard pabst authentic iceland.
+                  carry neutra before they sold out fixie 90s microdosing. Tacos
+                  pinterest fanny pack venmo, post-ironic heirloom try-hard
+                  pabst authentic iceland.
                 </p>
                 <a className="inline-flex items-center">
                   <img

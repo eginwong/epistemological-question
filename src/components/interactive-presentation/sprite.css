@@ -1,8 +1,17 @@
 @-webkit-keyframes idle-anim {
-  0% {
+  from {
     background-position: 0px -2px;
   }
-  100% {
+  to {
+    background-position: -128px -2px;
+  }
+}
+
+@keyframes idle-anim {
+  from {
+    background-position: 0px -2px;
+  }
+  to {
     background-position: -128px -2px;
   }
 }
@@ -11,7 +20,16 @@
   0% {
     background-position: 0px -36px;
   }
-  100% {
+  to {
+    background-position: -192px -36px;
+  }
+}
+
+@keyframes walk-anim {
+  0% {
+    background-position: 0px -36px;
+  }
+  to {
     background-position: -192px -36px;
   }
 }
@@ -41,24 +59,3 @@
   -o-animation: walk-anim 0.9s steps(6) infinite;
   animation: walk-anim 0.9s steps(6) infinite;
 }
-
-/* @-webkit-keyframes walk {
-  from { background-position: 0px; }
-  to { background-position: -612px; }
-}
-@-moz-keyframes walk {
-  from { background-position: 0px; }
-  to { background-position: -612px; }
-}
-@-ms-keyframes walk {
-  from { background-position: 0px; }
-  to { background-position: -612px; }
-}
-@-o-keyframes walk {
-  from { background-position: 0px; }
-  to { background-position: -612px; }
-}
-@-keyframes walk {
-  from { background-position: 0px; }
-  to { background-position: -612px; }
-} */
