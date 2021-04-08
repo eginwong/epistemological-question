@@ -88,14 +88,6 @@ function Game() {
     content: createSlideContents(id, val.color, val.text),
   }));
 
-  // const keyHandlerToSpriteState = (key) => {
-  //   if (["ArrowLeft", "ArrowRight"].includes(key)) {
-  //     setSpriteAnimation("walk");
-  //   } else {
-  //     setSpriteAnimation("idle");
-  //   }
-  // }
-
   return (
     <>
       <Slide>{slideContents[slideNumber].content}</Slide>
