@@ -37,13 +37,11 @@
 .interaction {
   display: flex;
   width: 5rem;
-  padding-left: 50px;
 }
 
 .sprite {
   width: 31px;
   height: 32px;
-  transform: scale(2);
   background-repeat: no-repeat;
   background-image: url("../../images/hero-spritesheet.png");
   image-rendering: pixelated;

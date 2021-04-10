@@ -52,7 +52,7 @@ function IndexPage() {
         <div className="h-1 bg-gray-200 rounded overflow-hidden">
           <div className="w-80 h-full bg-indigo-500"></div>
         </div>
-        <Sandbox />
+        <Sandbox maxWidth={window.innerWidth / 3} />
       </div>
 
 

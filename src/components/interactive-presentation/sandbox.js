@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 import Sprite from "./sprite";
-import useKeyboard from "./hooks/useKeyboard";
+import useKeyboardForMovement from "./hooks/useKeyboardForMovement";
 
-function Sandbox() {
-  const pressedKeys = useKeyboard(["ArrowRight", "ArrowLeft"]);
+// NOTE: doesn't account for window resizing
+function Sandbox({maxWidth}) {
+  const maxSpriteVelocity = 15;
+  const [position, direction, velocity] = useKeyboardForMovement(["ArrowRight", "ArrowLeft"], maxSpriteVelocity, maxWidth);
+  const spriteId = "sandbox-sprite";
+  const spriteSize = 2;
 
-  // handle logic to move sprite left and right
-  // no need to play with velocity, though that would be nice
+  useEffect(() => {
+    const spriteElt = document.getElementById(spriteId);
+    spriteElt.style.transform = `scale(${spriteSize}) translateX(${position.next}px)${!direction.x ? ' scaleX(-1)' : ''}`;
+  }, [position]);
 
   return <>
     <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
@@ -17,8 +24,16 @@ function Sandbox() {
         Use the ◀️ and ▶️ cursor keys to move <b>Captain Philosophy</b>!
       </p>
     </div>
-    <Sprite spriteState={pressedKeys.length ? 'walk' : 'idle'} />
+    <Sprite
+      id={spriteId}
+      spriteState={velocity === 1 ? 'idle' : 'walk'} />
+      <h2>{position.next}</h2>
+      <h2>{velocity}</h2>
   </>
 }
+
+Sandbox.propTypes = {
+  maxWidth: PropTypes.number
+};
 
 export default Sandbox;
