@@ -1,0 +1,44 @@
+{
+  "slides": [
+    {
+      "color": "yellow",
+      "text": "Use ◀️ and ▶️ keys!",
+      "backgroundImage": "city-background"
+    },
+    {
+      "color": "red",
+      "text": "What is the mind body problem?"
+    },
+    {
+      "color": "pink",
+      "text":
+        "Context: What is the relevance of the mind-body problem to daily life, media?"
+    },
+    {
+      "color": "indigo",
+      "text":
+        "Response: Man's questioning existence bridges the ontological gap between what is in our minds and what is objective and real."
+    },
+    {
+      "color": "green",
+      "text": "What are the roots of the mind-body problem? Cartesian Dualism"
+    },
+    {
+      "color": "blue",
+      "text": "(think about syllogism to explain argument and dissect premises)"
+    },
+    {
+      "color": "purple",
+      "text":
+        "Reflect upon Gallagher's/Heidegger's idea of _the question_ as the irreducible beginning"
+    },
+    {
+      "color": "gray",
+      "text": "Exposition"
+    },
+    {
+      "color": "blue",
+      "text": "Conclusion"
+    }
+  ]
+}

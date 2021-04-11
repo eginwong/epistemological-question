@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 // TODO: refactor as enum
 function Sprite({ id, spriteState }) {
   return (
-    <section className="interaction py-8">
+    <section className="py-8">
       <div id={id} className={`sprite ${spriteState}`}></div>
     </section>
   );

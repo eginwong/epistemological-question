@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Stepper from "./stepper";
 import Slide from "./slide";
 import Sprite from "./sprite";
+import Background from "./background";
 import "./game.css";
+import presentation from "../../data/presentation.json";
+import cityBackground from "../../images/backgrounds/city-background.png";
 
 /**
  * need to save some css from getting stripped!
@@ -21,7 +24,17 @@ import "./game.css";
 function Game() {
   const [slideNumber, setSlideNumber] = useState(0);
   // const [spriteAnimation, setSpriteAnimation] = useState('idle');
+  const spriteId = "game-sprite";
+  const spriteSize = 2;
 
+  useEffect(() => {
+    const spriteElt = document.getElementById(spriteId);
+    spriteElt.style.transform = `scale(${spriteSize}) translateX(${10}px)${" scaleX(-1)"}`;
+  }, []);
+
+  // could think about including sprite movement/effects here
+  // or pass an effect that has a specific trigger on the display
+  // should pass background too
   const createSlideContents = (id, color, contents) => {
     return (
       <React.Fragment key={id}>
@@ -41,61 +54,30 @@ function Game() {
     //   </div>
     // </React.Fragment>
   };
-  const slideData = [
-    {
-      color: "yellow",
-      text: "Use ◀️ and ▶️ keys!",
-    },
-    {
-      color: "red",
-      text: "What is the mind body problem?",
-    },
-    {
-      color: "pink",
-      text:
-        "Context: What is the relevance of the mind-body problem to daily life, media?",
-    },
-    {
-      color: "indigo",
-      text:
-        "Response: Man's questioning existence bridges the ontological gap between what is in our minds and what is objective and real.",
-    },
-    {
-      color: "green",
-      text: "What are the roots of the mind-body problem? Cartesian Dualism",
-    },
-    {
-      color: "blue",
-      text: "(think about syllogism to explain argument and dissect premises)",
-    },
-    {
-      color: "purple",
-      text:
-        "Reflect upon Gallagher's/Heidegger's idea of _the question_ as the irreducible beginning",
-    },
-    {
-      color: "gray",
-      text: "Exposition",
-    },
-    {
-      color: "blue",
-      text: "Conclusion",
-    },
-  ];
 
-  const slideContents = slideData.map((val, id) => ({
+  const mapBackgroundImages = (key) => {
+    switch(key) {
+      case 'city-background':
+        return cityBackground;
+    }
+  }
+
+  const slideContents = presentation.slides.map((val, id) => ({
     id,
     content: createSlideContents(id, val.color, val.text),
+    backgroundImage: mapBackgroundImages(val.backgroundImage)
   }));
 
   return (
     <>
-      <Slide>{slideContents[slideNumber].content}</Slide>
-      <Sprite spriteState={"idle"} />
-      <Stepper
-        maxCount={slideContents.length - 1}
-        changeCallback={(e) => setSlideNumber(e.target.value)}
-      />
+      <Background imageUrl={slideContents[slideNumber].backgroundImage}>
+        <Slide>{slideContents[slideNumber].content}</Slide>
+        <Sprite id={spriteId} spriteState={"idle"} />
+        <Stepper
+          maxCount={slideContents.length - 1}
+          changeCallback={(e) => setSlideNumber(e.target.value)}
+        />
+      </Background>
     </>
   );
 }

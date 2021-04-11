@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Slide({ children }) {
-  return <section className="text-center">{children}</section>;
+  return <section className="text-center p-5">{children}</section>;
 }
 
 Slide.propTypes = {

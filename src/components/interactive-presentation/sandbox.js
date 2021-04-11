@@ -27,8 +27,6 @@ function Sandbox({maxWidth}) {
     <Sprite
       id={spriteId}
       spriteState={velocity === 1 ? 'idle' : 'walk'} />
-      <h2>{position.next}</h2>
-      <h2>{velocity}</h2>
   </>
 }
 

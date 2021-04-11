@@ -16,6 +16,17 @@
   }
 }
 
+.sprite {
+  width: 31px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image: url("../../images/hero-spritesheet.png");
+  image-rendering: pixelated;
+
+  -webkit-animation: idle-anim 0.8s steps(4) infinite;
+  animation: idle-anim 0.8s steps(4) infinite;
+}
+
 @-webkit-keyframes walk-anim {
   0% {
     background-position: 0px -36px;
@@ -34,26 +45,119 @@
   }
 }
 
-.interaction {
-  display: flex;
-  width: 5rem;
-}
-
-.sprite {
-  width: 31px;
-  height: 32px;
-  background-repeat: no-repeat;
-  background-image: url("../../images/hero-spritesheet.png");
-  image-rendering: pixelated;
-
-  -webkit-animation: idle-anim 0.8s steps(4) infinite;
-  animation: idle-anim 0.8s steps(4) infinite;
-}
-
 .walk {
   -webkit-animation: walk-anim 0.9s steps(6) infinite;
   -moz-animation: walk-anim 0.9s steps(6) infinite;
   -ms-animation: walk-anim 0.9s steps(6) infinite;
   -o-animation: walk-anim 0.9s steps(6) infinite;
   animation: walk-anim 0.9s steps(6) infinite;
+}
+
+@-webkit-keyframes shock-anim {
+  from {
+    background-position: -96px -2px;
+  }
+  to {
+    background-position: -160px -2px;
+  }
+}
+
+@keyframes shock-anim {
+  from {
+    background-position: -96px -2px;
+  }
+  to {
+    background-position: -160px -2px;
+  }
+}
+
+.shock {
+  -webkit-animation: shock-anim 0.9s steps(2) infinite;
+  -moz-animation: shock-anim 0.9s steps(2) infinite;
+  -ms-animation: shock-anim 0.9s steps(2) infinite;
+  -o-animation: shock-anim 0.9s steps(2) infinite;
+  animation: shock-anim 0.9s steps(2) infinite;
+}
+
+@-webkit-keyframes jump-anim {
+  from {
+    background-position: 0px -68px;
+  }
+  to {
+    background-position: -128px -68px;
+  }
+}
+
+@keyframes jump-anim {
+  from {
+    background-position: 0px -68px;
+  }
+  to {
+    background-position: -128px -68px;
+  }
+}
+
+.jump {
+  -webkit-animation: jump-anim 0.9s steps(4) infinite;
+  -moz-animation: jump-anim 0.9s steps(4) infinite;
+  -ms-animation: jump-anim 0.9s steps(4) infinite;
+  -o-animation: jump-anim 0.9s steps(4) infinite;
+  animation: jump-anim 0.9s steps(4) infinite;
+}
+
+.success {
+  animation: none;
+  background-position: -158px -68px;
+}
+
+@-webkit-keyframes swim-anim {
+  from {
+    background-position: 0px -100px;
+  }
+  to {
+    background-position: -192px -100px;
+  }
+}
+
+@keyframes swim-anim {
+  from {
+    background-position: 0px -100px;
+  }
+  to {
+    background-position: -192px -100px;
+  }
+}
+
+.swim {
+  -webkit-animation: swim-anim 1s steps(6) infinite;
+  -moz-animation: swim-anim 1s steps(6) infinite;
+  -ms-animation: swim-anim 1s steps(6) infinite;
+  -o-animation: swim-anim 1s steps(6) infinite;
+  animation: swim-anim 1s steps(6) infinite;
+}
+
+@-webkit-keyframes punch-anim {
+  from {
+    background-position: 0px -132px;
+  }
+  to {
+    background-position: -96px -132px;
+  }
+}
+
+@keyframes punch-anim {
+  from {
+    background-position: 0px -132px;
+  }
+  to {
+    background-position: -96px -132px;
+  }
+}
+
+.punch {
+  -webkit-animation: punch-anim 1s steps(3) infinite;
+  -moz-animation: punch-anim 1s steps(3) infinite;
+  -ms-animation: punch-anim 1s steps(3) infinite;
+  -o-animation: punch-anim 1s steps(3) infinite;
+  animation: punch-anim 1s steps(3) infinite;
 }
