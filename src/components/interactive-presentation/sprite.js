@@ -2,7 +2,6 @@ import React from "react";
 import "./sprite.css";
 import PropTypes from "prop-types";
 
-// TODO: refactor as enum
 function Sprite({ id, spriteState }) {
   return (
     <section className="py-8">

@@ -27,7 +27,7 @@
   background-image: url("../../images/hero-spritesheet.png");
   image-rendering: pixelated;
 
-  transform: scale(var(--sprite-size));
+  transform: scale(var(--sprite-size)) translateX(25px);
   -webkit-animation: idle-anim 0.8s steps(4) infinite;
   animation: idle-anim 0.8s steps(4) infinite;
 }

@@ -4,7 +4,6 @@ import Slide from "./slide";
 import Sprite from "./sprite";
 import { SpriteStates } from "./spriteStates";
 import Background from "./background";
-import "./game.css";
 import presentation from "../../data/presentation.json";
 import cityBackground from "../../images/backgrounds/city-background.png";
 
