@@ -1,3 +1,7 @@
+:root {
+  --sprite-size: 2;
+}
+
 @-webkit-keyframes idle-anim {
   from {
     background-position: 0px -2px;
@@ -23,6 +27,7 @@
   background-image: url("../../images/hero-spritesheet.png");
   image-rendering: pixelated;
 
+  transform: scale(var(--sprite-size));
   -webkit-animation: idle-anim 0.8s steps(4) infinite;
   animation: idle-anim 0.8s steps(4) infinite;
 }
@@ -55,28 +60,28 @@
 
 @-webkit-keyframes shock-anim {
   from {
-    background-position: -96px -2px;
+    background-position: 0px -2px;
   }
-  to {
-    background-position: -160px -2px;
+  20%, 100% {
+    background-position: -128px -2px;
   }
 }
 
 @keyframes shock-anim {
   from {
-    background-position: -96px -2px;
+    background-position: 0px -2px;
   }
-  to {
-    background-position: -160px -2px;
+  20%, 100% {
+    background-position: -128px -2px;
   }
 }
 
 .shock {
-  -webkit-animation: shock-anim 0.9s steps(2) infinite;
-  -moz-animation: shock-anim 0.9s steps(2) infinite;
-  -ms-animation: shock-anim 0.9s steps(2) infinite;
-  -o-animation: shock-anim 0.9s steps(2) infinite;
-  animation: shock-anim 0.9s steps(2) infinite;
+  -webkit-animation: shock-anim 5s steps(4) infinite;
+  -moz-animation: shock-anim 5s steps(4) infinite;
+  -ms-animation: shock-anim 5s steps(4) infinite;
+  -o-animation: shock-anim 5s steps(4) infinite;
+  animation: shock-anim 5s steps(4) infinite;
 }
 
 @-webkit-keyframes jump-anim {

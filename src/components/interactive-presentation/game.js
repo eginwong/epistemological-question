@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Stepper from "./stepper";
 import Slide from "./slide";
 import Sprite from "./sprite";
+import { SpriteStates } from "./spriteStates";
 import Background from "./background";
 import "./game.css";
 import presentation from "../../data/presentation.json";
@@ -18,12 +19,10 @@ import cityBackground from "../../images/backgrounds/city-background.png";
  * bg-indigo-400
  * bg-blue-400
  * bg-pink-400
- *
  */
 
 function Game() {
   const [slideNumber, setSlideNumber] = useState(0);
-  // const [spriteAnimation, setSpriteAnimation] = useState('idle');
   const spriteId = "game-sprite";
   const spriteSize = 2;
 
@@ -63,7 +62,7 @@ function Game() {
   }
 
   const slideContents = presentation.slides.map((val, id) => ({
-    id,
+    ...val,
     content: createSlideContents(id, val.color, val.text),
     backgroundImage: mapBackgroundImages(val.backgroundImage)
   }));
@@ -72,7 +71,7 @@ function Game() {
     <>
       <Background imageUrl={slideContents[slideNumber].backgroundImage}>
         <Slide>{slideContents[slideNumber].content}</Slide>
-        <Sprite id={spriteId} spriteState={"idle"} />
+        <Sprite id={spriteId} spriteState={slideContents[slideNumber].spriteMovement || SpriteStates.IDLE } />
         <Stepper
           maxCount={slideContents.length - 1}
           changeCallback={(e) => setSlideNumber(e.target.value)}
