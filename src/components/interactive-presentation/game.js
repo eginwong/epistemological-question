@@ -4,6 +4,7 @@ import Slide from "./slide";
 import Sprite from "./sprite";
 import { SpriteStates } from "./spriteStates";
 import Background from "./background";
+import Transcript from "./transcript";
 import presentation from "../../data/presentation.json";
 import cityBackground from "../../images/backgrounds/city-background.png";
 
@@ -76,6 +77,7 @@ function Game() {
           changeCallback={(e) => setSlideNumber(e.target.value)}
         />
       </Background>
+      <Transcript noteText={slideContents[slideNumber].notes} />
     </>
   );
 }
