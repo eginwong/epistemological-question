@@ -26,7 +26,9 @@ const annotationFormatter = (citation) => {
         <span>
           {citation.author}.{` "${citation.chapter}" In `}
           <span style={{ fontStyle: "italic" }}>{citation.source}</span>
-          {`, ${citation.edition}., ${citation.pages}. ${citation.publisher}, ${citation.publishDate}.`}
+          {`, ${citation.edition ? `${citation.edition}., ` : ""}${
+            citation.pages
+          }. ${citation.publisher}, ${citation.publishDate}.`}
         </span>
       );
     case "web-encyclopedia":

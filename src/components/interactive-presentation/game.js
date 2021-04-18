@@ -55,23 +55,28 @@ function Game() {
   };
 
   const mapBackgroundImages = (key) => {
-    switch(key) {
-      case 'city-background':
+    switch (key) {
+      case "city-background":
         return cityBackground;
     }
-  }
+  };
 
   const slideContents = presentation.slides.map((val, id) => ({
     ...val,
     content: createSlideContents(id, val.color, val.text),
-    backgroundImage: mapBackgroundImages(val.backgroundImage)
+    backgroundImage: mapBackgroundImages(val.backgroundImage),
   }));
 
   return (
     <>
       <Background imageUrl={slideContents[slideNumber].backgroundImage}>
         <Slide>{slideContents[slideNumber].content}</Slide>
-        <Sprite id={spriteId} spriteState={slideContents[slideNumber].spriteMovement || SpriteStates.IDLE } />
+        <Sprite
+          id={spriteId}
+          spriteState={
+            slideContents[slideNumber].spriteMovement || SpriteStates.IDLE
+          }
+        />
         <Stepper
           maxCount={slideContents.length - 1}
           changeCallback={(e) => setSlideNumber(e.target.value)}

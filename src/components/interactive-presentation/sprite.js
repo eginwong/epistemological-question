@@ -12,7 +12,7 @@ function Sprite({ id, spriteState }) {
 
 Sprite.propTypes = {
   spriteState: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired
+  id: PropTypes.string.isRequired,
 };
 
 export default Sprite;

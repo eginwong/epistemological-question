@@ -20,13 +20,12 @@ function IndexPage() {
               "?: Man's Questioning Existence as a Response to the Ontological Aspect of the "
             }
           </span>
-          <span className="text-indigo-600 md:text-6xl">
-            Mind-Body
-          </span>
+          <span className="text-indigo-600 md:text-6xl">Mind-Body</span>
           <span> Problem</span>
         </h1>
         <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-          A philosophical exploration into why we are more than just a 🧠 in a container.
+          A philosophical exploration into why we are more than just a 🧠 in a
+          container.
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
@@ -54,7 +53,6 @@ function IndexPage() {
         </div>
         <Sandbox maxWidth={window.innerWidth / 3} />
       </div>
-
 
       <section className="text-gray-600 body-font hidden">
         <div className="container px-5 py-10 mx-auto">

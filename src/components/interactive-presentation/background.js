@@ -5,9 +5,10 @@ import "./background.css";
 // https://wallpaperaccess.com/8-bit-city
 function Background({ children, imageUrl }) {
   return (
-    <div 
+    <div
       className="flex flex-col flex-1 justify-between	bg-cover background-slow-transition"
-      style={{ backgroundImage: `url(${imageUrl})` }}>
+      style={{ backgroundImage: `url(${imageUrl})` }}
+    >
       {children}
     </div>
   );
@@ -15,7 +16,7 @@ function Background({ children, imageUrl }) {
 
 Background.propTypes = {
   children: PropTypes.any,
-  imageUrl: PropTypes.string
+  imageUrl: PropTypes.string,
 };
 
 export default Background;

@@ -39,6 +39,36 @@
       "description": "Gallagher provides an overview of the key areas regarding the bipolarity of consciousness and its resolution through the viewpoints of prominent modern philosophers such as Martin Heidegger and Gabriel Marcel."
     },
     {
+      "sourceType": "book",
+      "author": "Walker, Percy",
+      "source": "The Message in the Bottle: How Queer Man Is, How Queer Language Is, and What One Has to Do with the Other",
+      "publisher": "New York: Farrar, Straus and Giroux",
+      "publishDate": "1975",
+      "chapter": "Toward a Triadic Theory of Meaning.",
+      "pages": "159-188",
+      "description": "Percy complements the notion of the question as irreducible beginning in his work on semiotics and triadic meaning. His principal solution is on language, but his arguments align similarly when the subject is on the nature of curiosity and questioning in man."
+    },
+    {
+      "sourceType": "book",
+      "author": "Ariew, Roger and Eric Watkins",
+      "source": "Modern philosophy: an anthology of primary sources",
+      "publisher": "Indianapolis: Hackett Pub. Co",
+      "publishDate": "2019",
+      "chapter": "Meditation Three: Concerning God, That He Exists.",
+      "pages": "47-54",
+      "description": "Ariew and Watkins synthesize the thoughts of modern philosophers and represents Descartes 'Meditations' well. Reviewing the primary source allows for a deeper engagement with the thesis statement."
+    },
+    {
+      "sourceType": "book",
+      "author": "Marcel, Gabriel",
+      "source": "The Mystery of Being Vol. 1, Reflection & Mystery",
+      "publisher": "Miami: HardPress Publishing",
+      "publishDate": "2012",
+      "chapter": "Chapter VI: Feeling as a Mode of Participation.",
+      "pages": "103-124",
+      "description": "Marcel argues for the the being-by-participation idea to resolve the problem of the mind-body divide. This slots in well with the focus of the paper to address the mind-body problem."
+    },
+    {
       "sourceType": "web-encyclopedia",
       "author": "Robinson, Howard",
       "pageTitle": "Dualism.",
@@ -46,6 +76,33 @@
       "editor": "Edward N. Zalta",
       "webUrl": "plato.stanford.edu",
       "description": "Robinson systematically categorizes the ambiguity of the mind-body problem into distinct realms within philosophy. This source allows the presentation to precisely address a particular aspect of the mind-body problem with the irreducible beginning as the question."
+    },
+    {
+      "sourceType": "web-encyclopedia",
+      "author": "Downing, Lisa",
+      "pageTitle": "George Berkeley.",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "editor": "Edward N. Zalta",
+      "webUrl": "plato.stanford.edu",
+      "description": "Downing synthesizes the thought of Berkeley. Berkeley's contribution to the epistemological realm of idealism is insightful when demonstrating the extremes of the mind-body problem. This data point provides added context and gravitas the point of misaligned epistemologies with regards to man's being and knowledge."
+    },
+    {
+      "sourceType": "web-encyclopedia",
+      "author": "Stoljar, Daniel",
+      "pageTitle": "Physicalism.",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "editor": "Edward N. Zalta",
+      "webUrl": "plato.stanford.edu",
+      "description": "Stoljar showcases the other extreme of the mind-body dualism divide - that which focuses on the consequences of the body-only reality. As with Berkeley's idealism, physicalism demonstrates the opposite extremes of dualism."
+    },
+    {
+      "sourceType": "web",
+      "author": "Fieser, James",
+      "source": "Great Issues in Philosophy.",
+      "siteName": "The MIT Press Reader",
+      "publish": "1 January 2021",
+      "webUrl": "www.utm.edu",
+      "description": "Fieser's work aids in providing another perspective and further examples to aid in the grasping of the mind-body problem, extolling the arguments both for and against dualism."
     }
   ]
 }

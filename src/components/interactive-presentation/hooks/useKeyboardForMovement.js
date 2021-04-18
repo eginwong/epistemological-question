@@ -10,17 +10,31 @@ function useKeyboardForMovement(allowedKeys, maxVelocity = 15, maxWidth = 400) {
     if (!allowedKeys.includes(key)) return;
     if (key === "ArrowRight") {
       const proposedVelocity = position.prev < position.next ? velocity + 1 : 1;
-      setVelocity(proposedVelocity > maxVelocity ? maxVelocity : proposedVelocity);
+      setVelocity(
+        proposedVelocity > maxVelocity ? maxVelocity : proposedVelocity
+      );
       // in case resize occurs
-      const maxAllowedWidth = position.next > maxWidth ? position.next : maxWidth;
+      const maxAllowedWidth =
+        position.next > maxWidth ? position.next : maxWidth;
       const proposedPosition = position.next + 1 * velocity;
-      setPosition({ prev: position.next, next: proposedPosition > maxAllowedWidth ? maxAllowedWidth : proposedPosition });
+      setPosition({
+        prev: position.next,
+        next:
+          proposedPosition > maxAllowedWidth
+            ? maxAllowedWidth
+            : proposedPosition,
+      });
       setDirection({ x: true, y: direction.y });
     } else if (key === "ArrowLeft") {
       const proposedVelocity = position.prev > position.next ? velocity + 1 : 1;
-      setVelocity(proposedVelocity > maxVelocity ? maxVelocity : proposedVelocity);
+      setVelocity(
+        proposedVelocity > maxVelocity ? maxVelocity : proposedVelocity
+      );
       const proposedPosition = position.next - 1 * velocity;
-      setPosition({ prev: position.next, next: proposedPosition < minWidth ? minWidth : proposedPosition });
+      setPosition({
+        prev: position.next,
+        next: proposedPosition < minWidth ? minWidth : proposedPosition,
+      });
       setDirection({ x: false, y: direction.y });
     }
   };
