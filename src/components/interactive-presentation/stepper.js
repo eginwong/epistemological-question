@@ -1,15 +1,14 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-function Stepper({ maxCount, changeCallback }) {
+function Stepper({ maxCount }) {
   return (
     <div>
       <input
-        className="w-full"
+        className="invisible w-full"
         type="range"
         id="stepper"
         name="slide-number"
-        onChange={changeCallback}
         defaultValue="0"
         min="0"
         max={maxCount}
@@ -20,7 +19,6 @@ function Stepper({ maxCount, changeCallback }) {
 
 Stepper.propTypes = {
   maxCount: PropTypes.number.isRequired,
-  changeCallback: PropTypes.func,
 };
 
 export default Stepper;

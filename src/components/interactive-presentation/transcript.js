@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./transcript.css";
 
 function Transcript({ noteText = "" }) {
   return (
-    <div className="flex h-12 italic overflow-y-auto text-sm whitespace-pre-line">
+    <div className="flex min-height-100 italic overflow-y-auto text-sm whitespace-pre-line">
       <span>{noteText}</span>
     </div>
   );

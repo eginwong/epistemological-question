@@ -7,6 +7,9 @@ import Background from "./background";
 import Transcript from "./transcript";
 import presentation from "../../data/presentation.json";
 import cityBackground from "../../images/backgrounds/city-background.png";
+import nightSky from "../../images/backgrounds/night-sky.jpg";
+import sunset from "../../images/backgrounds/sunset.jpg";
+import useKeypress from "./hooks/useKeypress";
 
 /**
  * need to save some css from getting stripped!
@@ -21,8 +24,27 @@ import cityBackground from "../../images/backgrounds/city-background.png";
  * bg-pink-400
  */
 
+const incrementToMax = (val, max) => (val + 1 > max ? max : val + 1);
+const decrementToMin = (val, min) => (val - 1 < min ? min : val - 1);
+
 function Game() {
   const [slideNumber, setSlideNumber] = useState(0);
+  const [showTranscript, setShowTranscript] = useState(true);
+
+  useKeypress("t", () => {
+    setShowTranscript((showTranscript) => !showTranscript);
+  });
+
+  useKeypress("ArrowRight", () =>
+    setSlideNumber((slideNumber) =>
+      incrementToMax(slideNumber, slideContents.length)
+    )
+  );
+
+  useKeypress("ArrowLeft", () =>
+    setSlideNumber((slideNumber) => decrementToMin(slideNumber, 0))
+  );
+
   const spriteId = "game-sprite";
   const spriteSize = 2;
 
@@ -58,12 +80,16 @@ function Game() {
     switch (key) {
       case "city-background":
         return cityBackground;
+      case "night-sky":
+        return nightSky;
+      case "sunset":
+        return sunset;
     }
   };
 
   const slideContents = presentation.slides.map((val, id) => ({
     ...val,
-    content: createSlideContents(id, val.color, val.text),
+    content: createSlideContents(id, val.color, val.text, val.slideType),
     backgroundImage: mapBackgroundImages(val.backgroundImage),
   }));
 
@@ -79,10 +105,13 @@ function Game() {
         />
         <Stepper
           maxCount={slideContents.length - 1}
-          changeCallback={(e) => setSlideNumber(e.target.value)}
         />
       </Background>
-      <Transcript noteText={slideContents[slideNumber].notes} />
+      {showTranscript ? (
+        <Transcript noteText={slideContents[slideNumber].notes} />
+      ) : (
+        <></>
+      )}
     </>
   );
 }
