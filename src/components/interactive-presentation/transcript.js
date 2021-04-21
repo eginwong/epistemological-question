@@ -4,7 +4,7 @@ import "./transcript.css";
 
 function Transcript({ noteText = "" }) {
   return (
-    <div className="flex min-height-100 italic overflow-y-auto text-sm whitespace-pre-line">
+    <div className="flex bg-green-100 p-3 min-h-28 max-h-28 italic overflow-y-auto text-sm whitespace-pre-line">
       <span>{noteText}</span>
     </div>
   );

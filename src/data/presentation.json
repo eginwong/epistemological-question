@@ -3,12 +3,13 @@
   "slides": [
     {
       "color": "red",
-      "text": "Use the ◀️ and ▶️ keys to control the presentation."
+      "text": "Use the ◀️ and ▶️ keys to control the presentation.",
+      "notes": "Easter egg!"
     },
     {
       "color": "red",
-      "text": "Press t to show the transcript.",
-      "notes": "Press t again to hide the transcript if you prefer.\n\nGo ahead, I won't mind."
+      "text": "Press 🆃 to show the transcript.",
+      "notes": "Press 🆃 again to hide the transcript if you prefer.\n\nGo ahead, I won't mind."
     },
     {
       "backgroundImage": "night-sky",
@@ -52,13 +53,31 @@
       "backgroundImage": "black",
       "text": "Mind-Body Problem\n\n-> What is the relationship between mind and body?",
       "notes": "These issues are merely the logical consequences stemming from the infamous mind-body problem. The term, \"mind-body problem\", is quite ambiguous and covers several challenges in the realm of epistemology.",
-      "footnotes": "Howard Robinson, \"Dualism,\" in _The Internet Encyclopedia of Philosophy_, ed. Edward N. Zalta, at plato.stanford.edu."
+      "footnotes": [
+        {
+          "sourceType": "web-encyclopedia",
+          "author": "Howard Robinson",
+          "pageTitle": "Dualism.",
+          "source": "The Stanford Encyclopedia of Philosophy",
+          "editor": "Edward N. Zalta",
+          "webUrl": "plato.stanford.edu"
+        }
+      ]
     },
     {
       "backgroundImage": "black",
       "text": "Mind-Body Problem\n\n-> What are physical and mental states?\n-> How do they relate?",
       "notes": "The Stanford Encyclopedia of Philosophy has a great definition: what is the relationship between mind and body? It covers a wide variety of mysteries such as causality, intentionality, consciousness, and the self. For today's episode, we'll be narrowing in on the ontological question.",
-      "footnotes": "Howard Robinson, \"Dualism,\" in _The Internet Encyclopedia of Philosophy_, ed. Edward N. Zalta, at plato.stanford.edu."
+      "footnotes": [
+        {
+          "sourceType": "web-encyclopedia",
+          "author": "Howard Robinson",
+          "pageTitle": "Dualism.",
+          "source": "The Stanford Encyclopedia of Philosophy",
+          "editor": "Edward N. Zalta",
+          "webUrl": "plato.stanford.edu"
+        }
+      ]
     },
     {
       "backgroundImage": "black",
@@ -107,13 +126,31 @@
       "backgroundImage": "black",
       "color": "white",
       "notes": "Back to Descartes! He began his \"Meditations\" with skepticism but actually concluded with a more nuanced position on the mind-body problem. He was certain that the mind AND the body are real, but he couldn't explain how. He suggested that the two are linked together through the pineal gland* in the brain.",
-      "footnotes": "Howard Robinson, \"Dualism,\" in _The Internet Encyclopedia of Philosophy_, ed. Edward N. Zalta, at plato.stanford.edu."
+      "footnotes": [
+        {
+          "sourceType": "web-encyclopedia",
+          "author": "Howard Robinson",
+          "pageTitle": "Dualism.",
+          "source": "The Stanford Encyclopedia of Philosophy",
+          "editor": "Edward N. Zalta",
+          "webUrl": "plato.stanford.edu"
+        }
+      ]
     },
     {
       "backgroundImage": "black",
       "color": "white",
       "notes": "Unfortunately that doesn't answer all our questions about just how the mind and body relate or even how they communicate. How does a physical property manifest itself into a mental state? What is the mechanism to cross the bridge between the two?",
-      "footnotes": "Howard Robinson, \"Dualism,\" in _The Internet Encyclopedia of Philosophy_, ed. Edward N. Zalta, at plato.stanford.edu."
+      "footnotes": [
+        {
+          "sourceType": "web-encyclopedia",
+          "author": "Howard Robinson",
+          "pageTitle": "Dualism.",
+          "source": "The Stanford Encyclopedia of Philosophy",
+          "editor": "Edward N. Zalta",
+          "webUrl": "plato.stanford.edu"
+        }
+      ]
     },
     {
       "backgroundImage": "black",
@@ -124,8 +161,19 @@
     {
       "backgroundImage": "black",
       "color": "white",
-      "notes": "Heidegger says that man falls into a category of his own - that of a being-in-a-world. He argues that the notion of a being (or man) cannot exist outside of the world. There is never a possibility for a being outside of the world because the two are united.* \nOrtega says that existing is always co-existing. Language is an example of a construct that is inherently social.",
-      "footnotes": "Kenneth T. Gallagher, \"The Point of Departure,\" in _Philosophy of Knowledge_, (New York: Sheed and Ward, 1964), 54."
+      "notes": "Heidegger says that man falls into a category of his own - that of a being-in-a-world. He argues that the notion of a being (or man) cannot exist outside of the world. There is never a possibility for a being outside of the world because the two are united.* \n\nOrtega says that existing is always co-existing. Language is an example of a construct that is inherently social.",
+      "footnotes": [
+        {
+          "sourceType": "book",
+          "author": "Kenneth T Gallagher",
+          "source": "The Philosophy of Knowledge",
+          "edition": "2nd. ed",
+          "publisher": "New York: Fordham University Press",
+          "publishDate": "1982",
+          "chapter": "The Point of Departure.",
+          "pages": "44-67"
+        }
+      ]
     },
     {
       "backgroundImage": "black",
@@ -145,8 +193,18 @@
       "notes": "Because I cannot form a question without an other, I can ascertain that the object of my knowledge (known) must necessarily exist."
     },
     {
-      "color": "green",
-      "notes": "Therefore, through the \"question\", I know that both mental and physical states must necessarily exist. And where does the question come from? It comes inherently from man: man is a questioning being.\n\nThis formulation of three parts is reminiscent of Percy's \"Triadic Theory of Meaning\"*. Although his focus is on language, there remains a triadic relationship between the known, knower, and the relationship.\n\n*Walker Percy, “Toward a Triadic Theory of Meaning,” in _The Message in the Bottle: How Queer Man Is, How Queer Language Is, and What One Has to Do with the Other_, (Picador, NY: Farrar, Straus and Giroux, 1975), 159-188."
+      "notes": "Therefore, through the \"question\", I know that both mental and physical states must necessarily exist. And where does the question come from? It comes inherently from man: man is a questioning being.\n\nThis formulation of three parts is reminiscent of Percy's \"Triadic Theory of Meaning\"*. Although his focus is on language, there remains a triadic relationship between the known, knower, and the relationship.",
+      "footnotes": [
+        {
+          "sourceType": "book",
+          "author": "Percy Walker",
+          "source": "The Message in the Bottle: How Queer Man Is, How Queer Language Is, and What One Has to Do with the Other",
+          "publisher": "New York: Farrar, Straus and Giroux",
+          "publishDate": "1975",
+          "chapter": "Toward a Triadic Theory of Meaning.",
+          "pages": "159-188"
+        }
+      ]
     },
     {
       "text": "ka-pow",
@@ -155,7 +213,18 @@
     {
       "text": "highlight-1",
       "color": "blue",
-      "notes": "Looking at #1, knowledge cannot occur with merely the \"knower\". We need an other so that we can identify something to be known. Even if we question whether or not we exist, that implies that there is something out there which must be different. If my existence was all there ever was in a particular universe, I would never question the \"other\" because there couldn't be one. Even Descartes, in Meditations, uses the idea of a deceiving god* to represent some sort of other to compare with him self.\n\n*Roger Ariew, and Eric Watkins, \"Meditation Three: Concerning God, That He Exists,\" in _Modern philosophy: an anthology of primary sources_, (Indianapolis, IN: Hackett Pub. Co, 2019), 47-54."
+      "notes": "Looking at #1, knowledge cannot occur with merely the \"knower\". We need an other so that we can identify something to be known. Even if we question whether or not we exist, that implies that there is something out there which must be different. If my existence was all there ever was in a particular universe, I would never question the \"other\" because there couldn't be one. Even Descartes, in Meditations, uses the idea of a deceiving god* to represent some sort of other to compare with him self.",
+      "footnotes": [
+        {
+          "sourceType": "book",
+          "author": "Roger Ariew and Eric Watkins",
+          "source": "Modern philosophy: an anthology of primary sources",
+          "publisher": "Indianapolis: Hackett Pub. Co",
+          "publishDate": "2019",
+          "chapter": "Meditation Three: Concerning God, That He Exists.",
+          "pages": "47-54"
+        }
+      ]
     },
     {
       "text": "highlight-2",
@@ -165,7 +234,18 @@
     {
       "text": "highlight-3",
       "color": "blue",
-      "notes": "This is the million-dollar question! Heidegger, Ortega, and Marcel suggest that we are beings-by-participation. The melding of mind and body are inherent in what it means to be a being-in-the-world. Marcel uses the term \"being-by-participation\"*.\n\n*Gabriel Marcel, \"Chapter VI: Feeling as a Mode of Participation,\" in The Mystery of Being Vol.1, Reflection & Mystery, (Miami, FL.: HardPress Publishing, 2012), 116."
+      "notes": "This is the million-dollar question! Heidegger, Ortega, and Marcel suggest that we are beings-by-participation. The melding of mind and body are inherent in what it means to be a being-in-the-world. Marcel uses the term \"being-by-participation\".*",
+      "footnotes": [
+        {
+          "sourceType": "book",
+          "author": "Gabriel Marcel",
+          "source": "The Mystery of Being Vol. 1, Reflection & Mystery",
+          "publisher": "Miami: HardPress Publishing",
+          "publishDate": "2012",
+          "chapter": "Chapter VI: Feeling as a Mode of Participation.",
+          "pages": "103-124"
+        }
+      ]
     },
     {
       "notes": "In Aristotle's work, he says that all living beings are hylemorphic - a combination of matter and form. This combination is so tightly blended together that it becomes one entity, and that is man."

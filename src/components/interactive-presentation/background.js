@@ -7,7 +7,7 @@ function Background({ children, imageUrl }) {
   return (
     <div
       className="relative flex flex-col flex-1 justify-between	bg-cover background-slow-transition"
-      style={{ backgroundImage: `url(${imageUrl})` }}
+      style={imageUrl ? { backgroundImage: `url(${imageUrl})` } : {}}
     >
       {children}
     </div>

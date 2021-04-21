@@ -2,12 +2,16 @@
 Have free form in the beginning and then have autoplay
 
 ## Architecture
+
 - Main Components
   - `Game`: Wrapper for all logic
   - `Background`: Controls view that corresponds to stepper and slide
   - `Stepper`: Controls state of which slide we are currently on
   - `Sprite`: Sprite entity for movements and visual cues
   - `Slide`: Slide entity with text, images, and text
+  - `SlideNumber`: Slide number is overlayed atop of the presentation for reference
+  - `Sandbox`: Allow user to familiarize with sprite controls
+  - `Transcript`: Display presentation notes if there are any
 - Miscellaneous
   - `Reference-Card`: for annotated bibliography
 

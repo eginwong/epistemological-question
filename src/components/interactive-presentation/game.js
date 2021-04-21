@@ -57,24 +57,12 @@ function Game() {
   // could think about including sprite movement/effects here
   // or pass an effect that has a specific trigger on the display
   // should pass background too
-  const createSlideContents = (id, color, contents) => {
+  const createSlideContents = (id, color, contents, type = "text") => {
     return (
       <React.Fragment key={id}>
-        <h2
-          className={`inline-block text-content p-3 mb-4 text-2xl font-bold bg-${color}-400`}
-        >
-          {contents}
-        </h2>
+        {slideFormatter(type, color, contents)}
       </React.Fragment>
     );
-    //   <React.Fragment key={3}>
-    //   <div className="flex">
-    //     <h2 className="inline-block text-content p-3 mb-4 text-2xl font-bold bg-indigo-400">
-
-    //     </h2>
-    //     <img src="https://www.sapaviva.com/wp-content/uploads/2017/06/53S.-Ren%C3%A9-Descartes-1596-1650-316x316.jpg"></img>
-    //   </div>
-    // </React.Fragment>
   };
 
   const mapBackgroundImages = (key) => {
@@ -94,24 +82,20 @@ function Game() {
     backgroundImage: mapBackgroundImages(val.backgroundImage),
   }));
 
+  const slide = slideContents[slideNumber];
+
   return (
     <>
-      <Background imageUrl={slideContents[slideNumber].backgroundImage}>
-        <Slide>{slideContents[slideNumber].content}</Slide>
+      <Background imageUrl={slide.backgroundImage}>
+        <Slide content={slide.content} footnotes={slide.footnotes}></Slide>
         <Sprite
           id={spriteId}
-          spriteState={
-            slideContents[slideNumber].spriteMovement || SpriteStates.IDLE
-          }
+          spriteState={slide.spriteMovement || SpriteStates.IDLE}
         />
         <SlideNumber num={slideNumber - presentation.offset} />
       </Background>
       <Stepper maxCount={slideContents.length - 1} />
-      {showTranscript ? (
-        <Transcript noteText={slideContents[slideNumber].notes} />
-      ) : (
-        <></>
-      )}
+      {showTranscript ? <Transcript noteText={slide.notes} /> : <></>}
     </>
   );
 }
