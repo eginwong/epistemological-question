@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 
-export default function useKeyboardForMovement(allowedKeys, maxVelocity = 15, maxWidth = 400) {
+export default function useKeyboardForMovement(
+  allowedKeys,
+  maxVelocity = 15,
+  maxWidth = 400
+) {
   const minWidth = 0;
   const [position, setPosition] = useState({ prev: 0, next: 0 });
   const [velocity, setVelocity] = useState(1);
@@ -57,4 +61,3 @@ export default function useKeyboardForMovement(allowedKeys, maxVelocity = 15, ma
   }, [onKeyDown, onKeyUp]);
   return [position, direction, velocity];
 }
-  

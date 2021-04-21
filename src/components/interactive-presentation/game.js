@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Stepper from "./stepper";
 import Slide from "./slide";
+import SlideNumber from "./slideNumber";
 import Sprite from "./sprite";
 import { SpriteStates } from "./spriteStates";
 import Background from "./background";
@@ -37,7 +38,7 @@ function Game() {
 
   useKeypress("ArrowRight", () =>
     setSlideNumber((slideNumber) =>
-      incrementToMax(slideNumber, slideContents.length)
+      incrementToMax(slideNumber, presentation.slides.length - 1)
     )
   );
 
@@ -103,10 +104,9 @@ function Game() {
             slideContents[slideNumber].spriteMovement || SpriteStates.IDLE
           }
         />
-        <Stepper
-          maxCount={slideContents.length - 1}
-        />
+        <SlideNumber num={slideNumber - presentation.offset} />
       </Background>
+      <Stepper maxCount={slideContents.length - 1} />
       {showTranscript ? (
         <Transcript noteText={slideContents[slideNumber].notes} />
       ) : (

@@ -6,7 +6,7 @@ import "./background.css";
 function Background({ children, imageUrl }) {
   return (
     <div
-      className="flex flex-col flex-1 justify-between	bg-cover background-slow-transition"
+      className="relative flex flex-col flex-1 justify-between	bg-cover background-slow-transition"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
       {children}

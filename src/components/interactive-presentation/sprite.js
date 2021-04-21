@@ -4,9 +4,7 @@ import PropTypes from "prop-types";
 
 function Sprite({ id, spriteState }) {
   return (
-    <section className="py-8">
-      <div id={id} className={`sprite ${spriteState}`}></div>
-    </section>
+    <div id={id} className={`sprite ${spriteState} absolute bottom-4`}></div>
   );
 }
 

@@ -1,44 +1,209 @@
 {
+  "offset": 1,
   "slides": [
     {
-      "color": "yellow",
-      "text": "Use ◀️ and ▶️ keys!",
-      "backgroundImage": "city-background"
+      "color": "red",
+      "text": "Use the ◀️ and ▶️ keys to control the presentation."
     },
     {
       "color": "red",
-      "text": "What is the mind body problem?"
+      "text": "Press t to show the transcript.",
+      "notes": "Press t again to hide the transcript if you prefer.\n\nGo ahead, I won't mind."
     },
     {
-      "color": "pink",
-      "text":
-        "Context: What is the relevance of the mind-body problem to daily life, media?"
+      "backgroundImage": "night-sky",
+      "notes": "Welcome to today's adventure of Captain Philosophy!"
     },
     {
-      "color": "indigo",
-      "text":
-        "Response: Man's questioning existence bridges the ontological gap between what is in our minds and what is objective and real."
+      "backgroundImage": "night-sky",
+      "notes": "We will be exploring the mind-body problem, Cartesian Dualism, and Heidegger's question as the irreducible beginning.",
+      "slideType": "image"
+    },
+    {
+      "backgroundImage": "black",
+      "notes": "Captain Philosophy finds himself in modern America. The captain's in quite the bind today. Quick! Look out, the captain's surrounded! \t\n- gender dysphoria\t\n- human objectification through pornography\t\n- hook-up culture\t\n- euthanasia"
+    },
+    {
+      "backgroundImage": "city-background"
+    },
+    {
+      "backgroundImage": "city-background",
+      "notes": "Will our hero prevail?"
+    },
+    {
+      "backgroundImage": "black",
+      "notes": "What's that, Captain Philosophy? You say the answer is the question?"
+    },
+    {
+      "backgroundImage": "black",
+      "text": "Thesis: Man's questioning existence resolves the ontological aspect of the mind-body problem, between what is in our minds and what is objectively real.",
+      "notes": "Hrm. I think we'll need to unpack that a little bit, Cap'n."
+    },
+    {
+      "backgroundImage": "chalkboard",
+      "notes": "These modern day issues weren't always like this. They originate in man's disconnect between mind and body. How can man know what or who he is or even that he is?"
+    },
+    {
+      "backgroundImage": "black",
+      "text": "Mind-Body Problem",
+      "notes": "These issues are merely the logical consequences stemming from the infamous mind-body problem. The term, \"mind-body problem\", is quite ambiguous and covers several challenges in the realm of epistemology."
+    },
+    {
+      "backgroundImage": "black",
+      "text": "Mind-Body Problem\n\n-> What is the relationship between mind and body?",
+      "notes": "These issues are merely the logical consequences stemming from the infamous mind-body problem. The term, \"mind-body problem\", is quite ambiguous and covers several challenges in the realm of epistemology.",
+      "footnotes": "Howard Robinson, \"Dualism,\" in _The Internet Encyclopedia of Philosophy_, ed. Edward N. Zalta, at plato.stanford.edu."
+    },
+    {
+      "backgroundImage": "black",
+      "text": "Mind-Body Problem\n\n-> What are physical and mental states?\n-> How do they relate?",
+      "notes": "The Stanford Encyclopedia of Philosophy has a great definition: what is the relationship between mind and body? It covers a wide variety of mysteries such as causality, intentionality, consciousness, and the self. For today's episode, we'll be narrowing in on the ontological question.",
+      "footnotes": "Howard Robinson, \"Dualism,\" in _The Internet Encyclopedia of Philosophy_, ed. Edward N. Zalta, at plato.stanford.edu."
+    },
+    {
+      "backgroundImage": "black",
+      "notes": "To address these question, we need to understand them first."
+    },
+    {
+      "backgroundImage": "black",
+      "color": "white",
+      "text": "Doubtful Des, they called 'im",
+      "notes": "That's where Descartes comes in. During his time, the idea of skepticism was introduced and much in vogue. A simplistic version of the argument is thus."
+    },
+    {
+      "slideType": "syllogism",
+      "backgroundImage": "black",
+      "color": "white",
+      "text": "Skepticism\nAll [tw I can see and observe] is [tw can be deceiving].\nAll [tw can be deceiving] is [twi not real].\n> All [tw I can see and observe] is [twi not real].",
+      "notes": "What is real then? Cogito ergo sum, Descartes said."
+    },
+    {
+      "notes": "We begin in the mind. It is here that we encounter our first challenge. Modern culture suggests that our mind is not our body. If that is so, it doesn't matter what happens to our body. We can be different genders, species, anything that we can think of.\n\nNote: Plato's Forms supposed something similar\nNote: Berkeley argues that reality exists purely in minds and their ideas",
+      "spriteMovement": "shock"
+    },
+    {
+      "text": "1. Is all that we know in our minds only? Do we have a body? (Skepticism)",
+      "notes": "Well, skepticism seems to support the idea of a mind-only reality. What about the body-only reality?"
+    },
+    {
+      "color": "red",
+      "text": "A block of real",
+      "notes": "The idea of a body-only reality is actually a subset of a larger epistemological view called physicalism. Simply put, it claims that the world is entirely physical. At first blush, this idea may seem absurd. How can we deny our consciousness and experiences?"
+    },
+    {
+      "slideType": "syllogism",
+      "backgroundImage": "black",
+      "color": "white",
+      "text": "Physicalism\nAll [twi real] is [twi composed of my sense experiences and thoughts].\nAll [twi composed of my sense experiences and thoughts] is [a collection of neurochemicals in my brain].\nAll [collection of neurochemicals in my brain] is [twi physical].\n> All [twi real] is [twi physical].",
+      "notes": "Our aim isn't an intensive deep-dive into physicalism, so we will stop here."
+    },
+    {
+      "backgroundImage": "black",
+      "color": "white",
+      "text": "1. Is all that we know in our minds only? Do we have a body? (Skepticism)\n2. What if there is no mind and we are all body? (Physicalism)",
+      "notes": "We have one more area to explore before we check back in with Captain Philosophy."
+    },
+    {
+      "backgroundImage": "black",
+      "color": "white",
+      "notes": "Back to Descartes! He began his \"Meditations\" with skepticism but actually concluded with a more nuanced position on the mind-body problem. He was certain that the mind AND the body are real, but he couldn't explain how. He suggested that the two are linked together through the pineal gland* in the brain.",
+      "footnotes": "Howard Robinson, \"Dualism,\" in _The Internet Encyclopedia of Philosophy_, ed. Edward N. Zalta, at plato.stanford.edu."
+    },
+    {
+      "backgroundImage": "black",
+      "color": "white",
+      "notes": "Unfortunately that doesn't answer all our questions about just how the mind and body relate or even how they communicate. How does a physical property manifest itself into a mental state? What is the mechanism to cross the bridge between the two?",
+      "footnotes": "Howard Robinson, \"Dualism,\" in _The Internet Encyclopedia of Philosophy_, ed. Edward N. Zalta, at plato.stanford.edu."
+    },
+    {
+      "backgroundImage": "black",
+      "color": "white",
+      "text": "1. Is all that we know in our minds only? Do we have a body? (Skepticism)\n2. What if there is no mind and we are all body? (Physicalism)\n3. If both mind and body are real, how are they connected? (Cartesian Dualism)",
+      "notes": "What's that, Captain? something something Heidegger? Oh, why didn't we think of that sooner?"
+    },
+    {
+      "backgroundImage": "black",
+      "color": "white",
+      "notes": "Heidegger says that man falls into a category of his own - that of a being-in-a-world. He argues that the notion of a being (or man) cannot exist outside of the world. There is never a possibility for a being outside of the world because the two are united.* \nOrtega says that existing is always co-existing. Language is an example of a construct that is inherently social.",
+      "footnotes": "Kenneth T. Gallagher, \"The Point of Departure,\" in _Philosophy of Knowledge_, (New York: Sheed and Ward, 1964), 54."
+    },
+    {
+      "backgroundImage": "black",
+      "color": "white",
+      "text": "The answer is the question.",
+      "notes": "These three gentlemen, Heidegger, Ortega, and Gallagher have the answer. The answer is the question. Or rather, the fact that man is a questioning being is the bridge between the mental and the physical."
+    },
+    {
+      "backgroundImage": "black",
+      "color": "white",
+      "text": "Question?",
+      "notes": "Gallagher asks us to think - what is a question composed of? A question needs something to question about. But to have something to question about, we need some sort of subject that does the questioning. All-in-all, we have three parts to the question."
     },
     {
       "color": "green",
-      "text": "What are the roots of the mind-body problem? Cartesian Dualism"
+      "text": "The question necessitates three parts:\n- known (the other)\n- knower (the self)\n- that which binds the known to the knower (the meaning)",
+      "notes": "Because I cannot form a question without an other, I can ascertain that the object of my knowledge (known) must necessarily exist."
     },
     {
+      "color": "green",
+      "notes": "Therefore, through the \"question\", I know that both mental and physical states must necessarily exist. And where does the question come from? It comes inherently from man: man is a questioning being.\n\nThis formulation of three parts is reminiscent of Percy's \"Triadic Theory of Meaning\"*. Although his focus is on language, there remains a triadic relationship between the known, knower, and the relationship.\n\n*Walker Percy, “Toward a Triadic Theory of Meaning,” in _The Message in the Bottle: How Queer Man Is, How Queer Language Is, and What One Has to Do with the Other_, (Picador, NY: Farrar, Straus and Giroux, 1975), 159-188."
+    },
+    {
+      "text": "ka-pow",
+      "notes": "Oh, sounds like we're ready to resolve some of our earlier challenges."
+    },
+    {
+      "text": "highlight-1",
       "color": "blue",
-      "text": "(think about syllogism to explain argument and dissect premises)"
+      "notes": "Looking at #1, knowledge cannot occur with merely the \"knower\". We need an other so that we can identify something to be known. Even if we question whether or not we exist, that implies that there is something out there which must be different. If my existence was all there ever was in a particular universe, I would never question the \"other\" because there couldn't be one. Even Descartes, in Meditations, uses the idea of a deceiving god* to represent some sort of other to compare with him self.\n\n*Roger Ariew, and Eric Watkins, \"Meditation Three: Concerning God, That He Exists,\" in _Modern philosophy: an anthology of primary sources_, (Indianapolis, IN: Hackett Pub. Co, 2019), 47-54."
+    },
+    {
+      "text": "highlight-2",
+      "color": "blue",
+      "notes": "For #2, the questioning existence of man cannot be answered by the \"known\" in isolation. A body doesn't question. It is a bag of meat. Bags of meat do not wonder or have questions. Our own personal experiences and subjectivity do not agree with the idea of physicalism. As we can see in epistemology, we need all three actors of the question to arrive at knowledge. We need the known, knower, and the relationship by which we come to know."
+    },
+    {
+      "text": "highlight-3",
+      "color": "blue",
+      "notes": "This is the million-dollar question! Heidegger, Ortega, and Marcel suggest that we are beings-by-participation. The melding of mind and body are inherent in what it means to be a being-in-the-world. Marcel uses the term \"being-by-participation\"*.\n\n*Gabriel Marcel, \"Chapter VI: Feeling as a Mode of Participation,\" in The Mystery of Being Vol.1, Reflection & Mystery, (Miami, FL.: HardPress Publishing, 2012), 116."
+    },
+    {
+      "notes": "In Aristotle's work, he says that all living beings are hylemorphic - a combination of matter and form. This combination is so tightly blended together that it becomes one entity, and that is man."
+    },
+    {
+      "notes": "Man is not matter (body) nor form (mind/soul) alone, but its joining together into this one living and breathing man in the world, in time."
+    },
+    {
+      "notes": "It sounds like the Cap'n's almost finished up. Let's check back in with him."
     },
     {
       "color": "purple",
-      "text":
-        "Reflect upon Gallagher's/Heidegger's idea of _the question_ as the irreducible beginning"
+      "text": "Back to the fray",
+      "notes": "When we resolve all this confusion around the ontological reality of the mind-body problem, a lot of these modern day challenges go away."
     },
     {
-      "color": "gray",
-      "text": "Exposition"
+      "notes": "For Gender Dysphoria:\nYou have a physical manifestation of your sex. Your body and your mind are blended together in one being, and you cannot possibly be a different gender from your biology."
+    },
+    {
+      "notes": "For Pornography and Hook-Up Culture:\nWe are human beings with both a body and a mind together, and that means that meaningless sex affects your entire being. You cannot be casual about your body or those of others because every person is a real person and not merely a bag of flesh."
+    },
+    {
+      "notes": "For Euthanasia:\nAlthough people may have physical or mental deficiencies, that does not lessen who they are as a person. All people are both mind and body, and not merely one or the other. We cannot in good conscience allow euthanasia."
+    },
+    {
+      "color": "pink",
+      "backgroundImage": "sunset",
+      "text": "Conclusion: A way forward",
+      "notes": "In conclusion, modern day society struggles to articulate their thoughts around the mind-body problem. People know intuitively that the mind and the body are linked. It is our current state of affairs that mainstream media would have us gloss over all the implicit and false assumptions, so that they can argue for any philosophy that will suit their ends. Our very questioning existence as man proves how essential it is to live an examined life. We question and can know with certainty that we are more than just a mind-body divide."
     },
     {
       "color": "blue",
-      "text": "Conclusion"
+      "text": "Conclusion",
+      "notes": "That's all the time we have for this week's episode! See you next time on Captain Philosophy."
+    },
+    {
+      "color": "blue",
+      "text": "Credits\n\nMy wife and Chip\n"
     }
   ]
 }

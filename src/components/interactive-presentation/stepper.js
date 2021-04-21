@@ -5,7 +5,7 @@ function Stepper({ maxCount }) {
   return (
     <div>
       <input
-        className="invisible w-full"
+        className="h-0 invisible w-full"
         type="range"
         id="stepper"
         name="slide-number"
