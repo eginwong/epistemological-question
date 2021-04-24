@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const footnoteFormatter = ({ citation }) => {
+const footnoteFormatter = (citation) => {
   switch (citation.sourceType) {
     case "book":
       return (
@@ -24,9 +24,11 @@ const footnoteFormatter = ({ citation }) => {
   }
 };
 
-function Footnote(citation) {
+function Footnote({citation, color}) {
+  const customStyles = color ? ` text-${color}-400` : ''
+
   return (
-    <div className="mr-6 text-xs text-left whitespace-pre-line">
+    <div className={`mr-6 text-xs text-left whitespace-pre-line${customStyles}`}>
       <sup>*</sup>
       {footnoteFormatter(citation)}
     </div>
@@ -35,6 +37,7 @@ function Footnote(citation) {
 
 Footnote.propTypes = {
   citation: PropTypes.object.isRequired,
+  color: PropTypes.string
 };
 
 export default Footnote;

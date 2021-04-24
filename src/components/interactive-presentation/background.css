@@ -3,7 +3,7 @@
     background-position: 0px 0px;
   }
   to {
-    background-position: -400px 0px;
+    background-position: -600px 0px;
   }
 }
 
@@ -12,14 +12,14 @@
     background-position: 0px 0px;
   }
   to {
-    background-position: -400px 0px;
+    background-position: -600px 0px;
   }
 }
 
 .background-slow-transition {
-  -webkit-animation: background-scene-slide 1000s linear infinite;
-  -moz-animation: background-scene-slide 1000s linear infinite;
-  -ms-animation: background-scene-slide 1000s linear infinite;
-  -o-animation: background-scene-slide 1000s linear infinite;
-  animation: background-scene-slide 1000s linear infinite;
+  -webkit-animation: background-scene-slide 100s linear infinite;
+  -moz-animation: background-scene-slide 100s linear infinite;
+  -ms-animation: background-scene-slide 100s linear infinite;
+  -o-animation: background-scene-slide 100s linear infinite;
+  animation: background-scene-slide 100s linear infinite;
 }

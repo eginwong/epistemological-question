@@ -1,7 +1,16 @@
 ## Objective
+
 Have free form in the beginning and then have autoplay
 
 ## Architecture
+
+
+Each `Slide` should contain the following parts: 
+- `Background`
+- `Transcript`
+- `SlideNumber`
+- `Footnote`
+
 
 - Main Components
   - `Game`: Wrapper for all logic
@@ -16,24 +25,67 @@ Have free form in the beginning and then have autoplay
   - `Reference-Card`: for annotated bibliography
 
 ## TODOs
+
+FINISH BACKGROUNDS TONIGHT
+FINISH SLIDE TYPES TONIGHT!
+
+- define color with a legend to tell a story
+- create the slide types (list?)
 - sprite
-  - ~~pass spriteState as string to modify animation~~
   - (optional): choreograph actions in sprite tied to sprite state
-- slide
-  - load slides object
-  - include imgs as part of slides object
-  - styling with quotations
-  - ~~take input~~
-- stepper
-  - style slider to be hidden
-  - ~~add slider to RHS to allow skipping ahead~~
-- sandbox
-  - create a sandbox for playing with the sprite
-- background component
-  - create background
-  - transition backgrounds
-- game
-  - ~~orchestrate slide component~~
+
+- backgrounds to make
+  - mashup of issues ppt
+  - question-block
+  - ~~dark1/dark2~~
+  - ~~descartes~~
+  - hyle-morphism slide in black/white
+
+- sprites to make
+  - gender dysphoria
+  - death
+  - censored statue
+  - brain spinning
+
+1. sprite center large
+2. small sprite
+3. regular sprite size
+4. four sprites (extend into multiple slides?)
+5. four sprites (extend into multiple slides?)
+6. four sprites (extend into multiple slides?)
+7. four sprites (extend into multiple slides?)
+8. aura glowing middle with CP
+9. three evil sprites OR mind / body disconnect
+10. dark1/dark2 background
+11. mind from body image
+12. mind from body image
+13. mind from body image
+14. mind from body image
+15. descartes background
+16. descartes background
+17. descartes background
+18. chalkboard
+19. physical background
+20. physical background
+21. chalkboard
+22. descartes background
+23. descartes background
+24. chalkbhoard
+25. silhouettes
+26. silhouettes
+27. silhouettes
+28. knower relation, brain spinning in the middle
+29. knower relation, brain spinning in the middle
+30. dark1/dark2 background
+31. chalkboard
+32. chalkboard
+33. chalkboard
+34. hylemorphism
+35. hylemorphism
+36. hylemorphism
+37. noir
+38. noir
+39. noir
 
 # Gatsby Starter Tailwind
 
