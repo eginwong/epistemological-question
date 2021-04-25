@@ -4,16 +4,15 @@ Have free form in the beginning and then have autoplay
 
 ## Architecture
 
+Each `Slide` should contain the following parts:
 
-Each `Slide` should contain the following parts: 
 - `Background`
 - `Transcript`
 - `SlideNumber`
 - `Footnote`
 
-
 - Main Components
-  - `Game`: Wrapper for all logic
+  - `Presentation`: Wrapper for all logic
   - `Background`: Controls view that corresponds to stepper and slide
   - `Stepper`: Controls state of which slide we are currently on
   - `Sprite`: Sprite entity for movements and visual cues
@@ -26,20 +25,14 @@ Each `Slide` should contain the following parts:
 
 ## TODOs
 
-FINISH BACKGROUNDS TONIGHT
-FINISH SLIDE TYPES TONIGHT!
+1. create heart + first fusion sprite for hylemorphism
+2. create sprite for gender dysphoria?
 
 - define color with a legend to tell a story
 - create the slide types (list?)
 - sprite
-  - (optional): choreograph actions in sprite tied to sprite state
 
-- backgrounds to make
-  - mashup of issues ppt
-  - question-block
-  - ~~dark1/dark2~~
-  - ~~descartes~~
-  - hyle-morphism slide in black/white
+  - (optional): choreograph actions in sprite tied to sprite state
 
 - sprites to make
   - gender dysphoria
@@ -70,7 +63,7 @@ FINISH SLIDE TYPES TONIGHT!
 21. chalkboard
 22. descartes background
 23. descartes background
-24. chalkbhoard
+24. chalkboard
 25. silhouettes
 26. silhouettes
 27. silhouettes

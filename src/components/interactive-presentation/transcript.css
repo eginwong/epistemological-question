@@ -1,3 +1,7 @@
 .min-h-26 {
   min-height: 6.5rem;
 }
+
+.max-h-26 {
+  max-height: 6.5rem;
+}

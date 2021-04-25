@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Footnote from "./footnote";
-import Card from "./card";
+import { Card, NumberedCard } from "./card";
 
 function SlideContents({ type, contents, styles }) {
   let customStyles = "";
@@ -35,21 +35,50 @@ function SlideContents({ type, contents, styles }) {
           )}
         </section>
       );
-    case "list":
+    case "v-list":
       return (
         <div className="flex flex-col items-center justify-center">
           {!contents.cards ||
             contents.cards.map((val, ind) => <Card key={ind} content={val} />)}
+        </div>
+      );
+    case "h-list":
+      return (
+        <div className="flex flex-1 items-center">
+          <div className="flex flex-1 items-stretch justify-center p-4 space-x-4">
+            {!contents.cards ||
+              contents.cards.map((val, ind) => (
+                <NumberedCard
+                  key={ind}
+                  content={val}
+                  number={ind}
+                  highlight={contents.highlight === ind}
+                />
+              ))}
+          </div>
         </div>
       );
     case "syllogism":
       return (
-        <div className="flex flex-col items-center justify-center">
-          {!contents.cards ||
-            contents.cards.map((val, ind) => <Card key={ind} content={val} />)}
-        </div>
+        <section
+          className="text-center
+        p-5
+        flex
+        flex-col
+        justify-between
+        flex-1"
+        >
+          {!contents.text || (
+            <div className="flex flex-1 items-center justify-center">
+              <h2
+                className={`flex bg-gray-300 opacity-80 text-content p-3 mb-4 text-2xl font-bold${customStyles}`}
+              >
+                <div className="whitespace-pre-line">{contents.text}</div>
+              </h2>
+            </div>
+          )}
+        </section>
       );
-    // highlight?
     case "bottom":
       return (
         <section

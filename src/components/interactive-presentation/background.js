@@ -9,7 +9,6 @@ import inappropriate from "../../images/backgrounds/inappropriate.jpg";
 import nightSky from "../../images/backgrounds/night-sky.jpg";
 import descartes from "../../images/backgrounds/rene-descartes.jpg";
 import genderDysphoria from "../../images/backgrounds/gender-dysphoria.jpg";
-import question from "../../images/backgrounds/question-background.jpg";
 import mindBodyExplosion from "../../images/backgrounds/mind-body-explosion.jpg";
 import mindBodySchematics from "../../images/backgrounds/mind-body-schematics.jpg";
 import physicalism from "../../images/backgrounds/physicalism.jpg";
@@ -42,8 +41,6 @@ const mapBackgroundImages = (key) => {
       return mindBodySchematics;
     case "physicalism":
       return physicalism;
-    case "question":
-      return question;
     case "silhouettes":
       return silhouettes;
     case "starry-night":
