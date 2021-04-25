@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/framework/layout";
 import SEO from "../components/framework/seo";
-import Game from "../components/interactive-presentation/game";
+import Presentation from "../components/interactive-presentation/presentation";
 
 function PresentationPage() {
   return (
@@ -11,7 +11,7 @@ function PresentationPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Presentation"
       />
-      <Game />
+      <Presentation />
     </Layout>
   );
 }

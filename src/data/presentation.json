@@ -20,72 +20,67 @@
       }
     },
     {
-      "styles": {
-        "backgroundImage": "starry-night",
-        "backgroundTransition": true
+      "backgroundStyles": {
+        "image": "starry-night",
+        "transition": true
       },
       "contents": {
         "notes": "Welcome to today's adventure of Captain Philosophy!\n\nWe will be exploring the mind-body problem, Cartesian Dualism, and Heidegger's question as the irreducible beginning."
       }
     },
     {
-      "styles": {
-        "backgroundImage": "city-background",
-        "backgroundTransition": true
+      "backgroundStyles": {
+        "image": "city",
+        "transition": true
       },
       "contents": {
         "notes": "Captain Philosophy finds himself in modern America. Where is the captain anyway?"
       }
     },
     {
-      "styles": {
-        "backgroundImage": "alley-way",
-        "backgroundTransition": true
+      "backgroundStyles": {
+        "image": "alley"
       },
       "contents": {
-        "notes": "There's the captain. Oh wait, look out, the captain's surrounded! \t\n- gender dysphoria\t\n- human objectification through pornography\t\n- hook-up culture\t\n- euthanasia"
+        "notes": "There's the captain. Oh wait, look out, the captain's surrounded!"
       }
     },
     {
-      "styles": {
-        "backgroundImage": "alley-way",
-        "backgroundTransition": true
+      "backgroundStyles": {
+        "image": "alley"
       },
       "contents": {
         "notes": "Gender Dysphoria"
       }
     },
     {
-      "styles": {
-        "backgroundImage": "alley-way",
-        "backgroundTransition": true
+      "backgroundStyles": {
+        "image": "inappropriate"
       },
       "contents": {
         "notes": "Human Objectification Through Pornography and Hook-up Culture"
       }
     },
     {
-      "styles": {
-        "backgroundImage": "alley-way",
-        "backgroundTransition": true
+      "backgroundStyles": {
+        "image": "alley"
       },
       "contents": {
         "notes": "Euthanasia"
       }
     },
     {
-      "styles": {
-        "backgroundImage": "alley-way",
-        "backgroundTransition": true
+      "backgroundStyles": {
+        "image": "alley",
+        "transition": true
       },
       "contents": {
         "notes": "Will our hero prevail against these modern day thugs?"
       }
     },
     {
-      "styles": {
-        "backgroundImage": "starry-night",
-        "backgroundTransition": true
+      "backgroundStyles": {
+        "image": "question"
       },
       "contents": {
         "notes": "What's that, Captain Philosophy? You say the answer to these modern day dilemmas is the question?"
@@ -93,9 +88,11 @@
     },
     {
       "styles": {
-        "color": "blue",
-        "backgroundImage": "starry-night",
-        "backgroundTransition": true
+        "color": "blue"
+      },
+      "backgroundStyles": {
+        "image": "starry-night",
+        "transition": true
       },
       "contents": {
         "text": "Thesis: Man's questioning existence resolves the ontological aspect of the mind-body problem, between what is in our minds and what is objectively real.",
@@ -103,35 +100,33 @@
       }
     },
     {
-      "styles": {
-        "backgroundImage": "dark-split"
+      "backgroundStyles": {
+        "image": "dark-split"
       },
       "contents": {
         "notes": "These modern day issues weren't always like this. They originate in man's disconnect between mind and body. How can man know what or who he is or even that he is?"
       }
     },
     {
-      "slideType": "list",
-      "styles": {
-        "backgroundImage": "dark-split",
-        "backgroundTransition": true
+      "type": "list",
+      "backgroundStyles": {
+        "image": "dark-split"
       },
       "contents": {
-        "cards": [
-          "Mind-Body Problem"
-        ],
+        "cards": ["Mind-Body Problem"],
         "notes": "These issues are merely the logical consequences stemming from the infamous mind-body problem."
       }
     },
     {
-      "slideType": "list",
-      "styles": {
-        "backgroundImage": "dark-split",
-        "backgroundTransition": true
+      "type": "list",
+      "backgroundStyles": {
+        "image": "dark-split",
+        "transition": true
       },
       "contents": {
         "cards": [
-          "Mind-Body Problem", "What is the relationship between mind and body?"
+          "Mind-Body Problem",
+          "What is the relationship between mind and body?"
         ],
         "notes": "The term, \"mind-body problem\", is quite ambiguous and covers several challenges in the realm of epistemology.",
         "footnotes": [
@@ -147,14 +142,16 @@
       }
     },
     {
-      "slideType": "list",
-      "styles": {
-        "backgroundImage": "dark-split",
-        "backgroundTransition": true
+      "type": "list",
+      "backgroundStyles": {
+        "image": "dark-split",
+        "transition": true
       },
       "contents": {
         "cards": [
-          "Mind-Body Problem", "What is the relationship between mind and body?", "What are physical and mental states and their relation?"
+          "Mind-Body Problem",
+          "What is the relationship between mind and body?",
+          "What are physical and mental states and their relation?"
         ],
         "notes": "The Stanford Encyclopedia of Philosophy has a great definition: what is the relationship between mind and body? It covers a wide variety of mysteries such as causality, intentionality, consciousness, and the self. For today's episode, we'll be narrowing in on the ontological question.",
         "footnotes": [
@@ -170,26 +167,31 @@
       }
     },
     {
+      "type": "emphasis",
       "contents": {
         "text": "To address these questions, we need to understand them first.",
         "notes": "Always a good place to start 🧐"
       }
     },
     {
-      "slideType": "caption",
-      "styles": {
-        "backgroundImage": "descartes"
+      "type": "caption",
+      "backgroundStyles": {
+        "image": "descartes"
       },
-      "textColor": "yellow",
-      "text": "Doubtful Des, they called 'im",
+      "styles": {
+        "color": "blue"
+      },
       "contents": {
+        "text": "Doubtful Des, they called 'im",
         "notes": "That's where Descartes comes in. During his time, the idea of skepticism was introduced and much in vogue. A simplistic version of the argument is thus."
       }
     },
     {
-      "slideType": "syllogism",
+      "type": "syllogism",
+      "backgroundStyles": {
+        "image": "descartes"
+      },
       "styles": {
-        "backgroundImage": "descartes",
         "color": "white",
         "textColor": "yellow"
       },
@@ -199,6 +201,9 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "mind-body-explosion"
+      },
       "contents": {
         "notes": "We begin in the mind. It is here that we encounter our first challenge. Modern culture suggests that our mind is not our body. If that is so, it doesn't matter what happens to our body. We can be different genders, species, anything that we can think of.\n\nNote: Plato's Forms supposed something similar\nNote: Berkeley argues that reality exists purely in minds and their ideas"
       },
@@ -207,29 +212,32 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "chalkboard"
+      },
       "styles": {
-        "backgroundImage": "chalkboard",
         "textColor": "green"
       },
-      "text": "1. Is all that we know in our minds only? Do we have a body?\n(Skepticism)",
       "contents": {
+        "text": "1. Is all that we know in our minds only? Do we have a body?\n(Skepticism)",
         "notes": "Well, skepticism seems to support the idea of a mind-only reality. What about the body-only reality?"
       }
     },
     {
-      "styles": {
-        "color": "red"
+      "backgroundStyles": {
+        "image": "physicalism"
       },
-      "text": "A block of real",
       "contents": {
         "notes": "The idea of a body-only reality is actually a subset of a larger epistemological view called physicalism. Simply put, it claims that the world is entirely physical. At first blush, this idea may seem absurd. How can we deny our consciousness and experiences?"
       }
     },
     {
-      "slideType": "syllogism",
+      "type": "syllogism",
+      "backgroundStyles": {
+        "image": "physicalism",
+        "transition": true
+      },
       "styles": {
-        "backgroundImage": "starry-night",
-        "backgroundTransition": true,
         "color": "white"
       },
       "contents": {
@@ -238,8 +246,10 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "chalkboard"
+      },
       "styles": {
-        "backgroundImage": "chalkboard",
         "textColor": "green",
         "color": "white"
       },
@@ -249,9 +259,11 @@
       }
     },
     {
+      "type": "bottom",
+      "backgroundStyles": {
+        "image": "mind-body-schematics"
+      },
       "styles": {
-        "backgroundImage": "starry-night",
-        "backgroundTransition": true,
         "color": "white"
       },
       "contents": {
@@ -269,9 +281,11 @@
       }
     },
     {
+      "type": "bottom",
+      "backgroundStyles": {
+        "image": "mind-body-schematics"
+      },
       "styles": {
-        "backgroundImage": "starry-night",
-        "backgroundTransition": true,
         "color": "white"
       },
       "contents": {
@@ -289,8 +303,10 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "chalkboard"
+      },
       "styles": {
-        "backgroundImage": "chalkboard",
         "textColor": "green",
         "color": "white"
       },
@@ -300,9 +316,12 @@
       }
     },
     {
+      "type": "bottom",
+      "backgroundStyles": {
+        "image": "silhouettes",
+        "transition": true
+      },
       "styles": {
-        "backgroundImage": "starry-night",
-        "backgroundTransition": true,
         "color": "white"
       },
       "contents": {
@@ -322,9 +341,8 @@
       }
     },
     {
+      "type": "emphasis",
       "styles": {
-        "backgroundImage": "starry-night",
-        "backgroundTransition": true,
         "color": "white"
       },
       "contents": {
@@ -333,9 +351,8 @@
       }
     },
     {
+      "type": "emphasis",
       "styles": {
-        "backgroundImage": "starry-night",
-        "backgroundTransition": true,
         "color": "white"
       },
       "contents": {
@@ -344,15 +361,17 @@
       }
     },
     {
-      "styles": {
-        "color": "green"
-      },
+      "type": "emphasis",
       "contents": {
         "text": "The question necessitates three parts:\n- known (the other)\n- knower (the self)\n- that which binds the known to the knower (the meaning)",
         "notes": "Because I cannot form a question without an other, I can ascertain that the object of my knowledge (known) must necessarily exist."
       }
     },
     {
+      "type": "bottom",
+      "backgroundStyles": {
+        "image": "triune-knowledge"
+      },
       "contents": {
         "notes": "Therefore, through the \"question\", I know that both mental and physical states must necessarily exist. And where does the question come from? It comes inherently from man: man is a questioning being.\n\nThis formulation of three parts is reminiscent of Percy's \"Triadic Theory of Meaning\"*. Although his focus is on language, there remains a triadic relationship between the known, knower, and the relationship.",
         "footnotes": [
@@ -369,14 +388,17 @@
       }
     },
     {
+      "type": "emphasis",
       "contents": {
         "text": "ka-pow",
         "notes": "Oh, sounds like we're ready to resolve some of our earlier challenges."
       }
     },
     {
+      "backgroundStyles": {
+        "image": "chalkboard"
+      },
       "styles": {
-        "backgroundImage": "chalkboard",
         "textColor": "green"
       },
       "contents": {
@@ -396,8 +418,10 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "chalkboard"
+      },
       "styles": {
-        "backgroundImage": "chalkboard",
         "textColor": "green"
       },
       "contents": {
@@ -406,8 +430,10 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "chalkboard"
+      },
       "styles": {
-        "backgroundImage": "chalkboard",
         "textColor": "green"
       },
       "contents": {
@@ -442,20 +468,23 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "alley"
+      },
       "styles": {
-        "backgroundImage": "alley-way",
-        "backgroundTransition": true,
         "color": "purple"
       },
-      "text": "Back to the fray",
       "contents": {
+        "text": "Back to the fray",
         "notes": "When we resolve all this confusion around the ontological reality of the mind-body problem, a lot of these modern day challenges go away."
       }
     },
     {
+      "backgroundStyles": {
+        "image": "alley",
+        "transition": true
+      },
       "styles": {
-        "backgroundImage": "alley-way",
-        "backgroundTransition": true,
         "color": "purple"
       },
       "contents": {
@@ -464,9 +493,11 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "inappropriate",
+        "vTransition": true
+      },
       "styles": {
-        "backgroundImage": "alley-way",
-        "backgroundTransition": true,
         "color": "purple"
       },
       "contents": {
@@ -475,9 +506,11 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "alley",
+        "transition": true
+      },
       "styles": {
-        "backgroundImage": "alley-way",
-        "backgroundTransition": true,
         "color": "purple"
       },
       "contents": {
@@ -486,29 +519,21 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "sunset",
+        "transition": true
+      },
       "styles": {
-        "backgroundImage": "sunset",
-        "backgroundTransition": true,
         "color": "green"
       },
       "contents": {
         "text": "Conclusion: A way forward",
-        "notes": "In conclusion, modern day society struggles to articulate their thoughts around the mind-body problem. People know intuitively that the mind and the body are linked. It is our current state of affairs that mainstream media would have us gloss over all the implicit and false assumptions, so that they can argue for any philosophy that will suit their ends. Our very questioning existence as man proves how essential it is to live an examined life. We question and can know with certainty that we are more than just a mind-body divide."
+        "notes": "In conclusion, modern day society struggles to articulate their thoughts around the mind-body problem. People know intuitively that the mind and the body are linked. It is our current state of affairs that mainstream media would have us gloss over all the implicit and false assumptions, so that they can argue for any philosophy that will suit their ends. Our very questioning existence as man proves how essential it is to live an examined life. We question and can know with certainty that we are more than just a mind-body divide.\n\nThat's all the time we have for this week's episode! See you next time on Captain Philosophy."
       }
     },
     {
-      "styles": {
-        "backgroundImage": "sunset",
-        "backgroundTransition": true
-      },
-      "contents": {
-        "notes": "That's all the time we have for this week's episode! See you next time on Captain Philosophy."
-      }
-    },
-    {
-      "styles": {
-        "backgroundImage": "sunset",
-        "backgroundTransition": true
+      "backgroundStyles": {
+        "image": "sunset"
       },
       "contents": {
         "text": "Credits\n\nMy wife and Chip\n"

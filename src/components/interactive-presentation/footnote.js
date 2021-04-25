@@ -24,11 +24,13 @@ const footnoteFormatter = (citation) => {
   }
 };
 
-function Footnote({citation, color}) {
-  const customStyles = color ? ` text-${color}-400` : ''
+function Footnote({ citation, color }) {
+  const customStyles = color ? ` text-${color}-400` : "";
 
   return (
-    <div className={`mr-6 text-xs text-left whitespace-pre-line${customStyles}`}>
+    <div
+      className={`bg-gray-200 mr-12 p-3 rounded-lg text-xs text-left whitespace-pre-line${customStyles}`}
+    >
       <sup>*</sup>
       {footnoteFormatter(citation)}
     </div>
@@ -37,7 +39,7 @@ function Footnote({citation, color}) {
 
 Footnote.propTypes = {
   citation: PropTypes.object.isRequired,
-  color: PropTypes.string
+  color: PropTypes.string,
 };
 
 export default Footnote;
