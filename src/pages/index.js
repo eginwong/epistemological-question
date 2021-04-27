@@ -5,6 +5,8 @@ import Layout from "../components/framework/layout";
 import SEO from "../components/framework/seo";
 import Sandbox from "../components/interactive-presentation/sandbox";
 
+const isBrowser = () => typeof window !== "undefined";
+
 function IndexPage() {
   return (
     <Layout>
@@ -51,7 +53,7 @@ function IndexPage() {
         <div className="h-1 bg-gray-200 rounded overflow-hidden">
           <div className="w-80 h-full bg-indigo-500"></div>
         </div>
-        <Sandbox maxWidth={window.innerWidth / 3} />
+        <Sandbox maxWidth={isBrowser() ? window.innerWidth / 3 : 1280} />
       </div>
 
       <section className="text-gray-600 body-font hidden">

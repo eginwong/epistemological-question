@@ -14,7 +14,7 @@ function Presentation() {
   });
 
   const slideComponents = slides.map(
-    ({ type, contents, styles, backgroundStyles }, id) => (
+    ({ type, contents, styles, backgroundStyles, sprites }, id) => (
       <Slide
         key={id}
         number={slideNumber - offset}
@@ -22,6 +22,7 @@ function Presentation() {
         contents={contents}
         styles={styles}
         backgroundStyles={backgroundStyles}
+        sprites={sprites}
         showTranscript={showTranscript}
       />
     )

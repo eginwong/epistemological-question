@@ -5,17 +5,26 @@ import alley from "../../images/backgrounds/alley-way.jpg";
 import city from "../../images/backgrounds/city.png";
 import chalkboard from "../../images/backgrounds/chalkboard.png";
 import darkSplit from "../../images/backgrounds/dark-1-2.png";
-import inappropriate from "../../images/backgrounds/inappropriate.jpg";
-import nightSky from "../../images/backgrounds/night-sky.jpg";
 import descartes from "../../images/backgrounds/rene-descartes.jpg";
-import genderDysphoria from "../../images/backgrounds/gender-dysphoria.jpg";
-import mindBodyExplosion from "../../images/backgrounds/mind-body-explosion.jpg";
 import mindBodySchematics from "../../images/backgrounds/mind-body-schematics.jpg";
 import physicalism from "../../images/backgrounds/physicalism.jpg";
 import silhouettes from "../../images/backgrounds/silhouettes.jpg";
 import starryNight from "../../images/backgrounds/starry-night.jpg";
 import sunset from "../../images/backgrounds/sunset.jpg";
 import triuneKnowledge from "../../images/backgrounds/triune-knowledge.png";
+
+/**
+ * need to save some css from getting stripped!
+ * PurgeCSS:
+ * bg-red-400
+ * bg-green-400
+ * bg-yellow-400
+ * bg-gray-400
+ * bg-purple-400
+ * bg-indigo-400
+ * bg-blue-400
+ * bg-pink-400
+ */
 
 const mapBackgroundImages = (key) => {
   switch (key) {
@@ -29,14 +38,6 @@ const mapBackgroundImages = (key) => {
       return darkSplit;
     case "descartes":
       return descartes;
-    case "gender-dysphoria":
-      return genderDysphoria;
-    case "night-sky":
-      return nightSky;
-    case "inappropriate":
-      return inappropriate;
-    case "mind-body-explosion":
-      return mindBodyExplosion;
     case "mind-body-schematics":
       return mindBodySchematics;
     case "physicalism":
@@ -59,7 +60,7 @@ function Background({ children, styles }) {
     : "";
   return (
     <div
-      className={`relative flex flex-col flex-1 justify-between	bg-cover${customStyles}`}
+      className={`relative flex flex-col flex-1 justify-between	bg-cover ${customStyles}`}
       style={
         styles.image
           ? { backgroundImage: `url(${mapBackgroundImages(styles.image)})` }

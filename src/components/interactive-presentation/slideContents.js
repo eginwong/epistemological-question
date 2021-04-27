@@ -12,7 +12,7 @@ function SlideContents({ type, contents, styles }) {
     case "caption":
       return (
         <section className="text-center items-center p-5 flex flex-col justify-end flex-1">
-          <div className={`w-80${customStyles}`}>{contents.text}</div>
+          <div className={`w-80 ${customStyles}`}>{contents.text}</div>
         </section>
       );
     case "emphasis":
@@ -28,7 +28,7 @@ function SlideContents({ type, contents, styles }) {
         >
           {!contents.text || (
             <h2
-              className={`inline-block text-content p-3 text-2xl font-bold${customStyles}`}
+              className={`inline-block text-content p-3 text-2xl font-bold ${customStyles}`}
             >
               <div className="whitespace-pre-line">{contents.text}</div>
             </h2>
@@ -71,7 +71,7 @@ function SlideContents({ type, contents, styles }) {
           {!contents.text || (
             <div className="flex flex-1 items-center justify-center">
               <h2
-                className={`flex bg-gray-300 opacity-80 text-content p-3 mb-4 text-2xl font-bold${customStyles}`}
+                className={`flex bg-gray-300 opacity-80 text-content p-3 mb-4 text-2xl font-bold ${customStyles}`}
               >
                 <div className="whitespace-pre-line">{contents.text}</div>
               </h2>
@@ -92,7 +92,7 @@ function SlideContents({ type, contents, styles }) {
           {!contents.text || (
             <div>
               <h2
-                className={`inline-block text-content p-3 mb-4 text-2xl font-bold${customStyles}`}
+                className={`inline-block text-content p-3 mb-4 text-2xl font-bold ${customStyles}`}
               >
                 <div className="whitespace-pre-line">{contents.text}</div>
               </h2>
@@ -117,7 +117,7 @@ function SlideContents({ type, contents, styles }) {
           {!contents.text || (
             <div>
               <h2
-                className={`inline-block text-content p-3 mb-4 text-2xl font-bold${customStyles}`}
+                className={`inline-block text-content p-3 mb-4 text-2xl font-bold ${customStyles}`}
               >
                 <div className="whitespace-pre-line">{contents.text}</div>
               </h2>

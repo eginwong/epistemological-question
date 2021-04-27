@@ -1,5 +1,5 @@
 :root {
-  --sprite-size: 2;
+  --sprite-size: 1;
 }
 
 @-webkit-keyframes idle-anim {
@@ -20,149 +20,113 @@
   }
 }
 
-.sprite {
-  width: 31px;
-  height: 32px;
+.base-sprite {
+  width: 128px;
+  height: 128px;
+  background-image: url("../../images/spritesheets/spritesheet.png");
   background-repeat: no-repeat;
-  background-image: url("../../images/hero-spritesheet.png");
   image-rendering: pixelated;
-
-  transform: scale(var(--sprite-size)) translateX(25px);
-  -webkit-animation: idle-anim 0.8s steps(4) infinite;
-  animation: idle-anim 0.8s steps(4) infinite;
+  transform: scale(var(--sprite-size));
 }
 
-@-webkit-keyframes walk-anim {
-  0% {
-    background-position: 0px -36px;
+.sprite-centered {
+  transform: translateY(-100%) scale(var(--sprite-size));
+}
+
+.gender-sprite {
+  -webkit-animation: gender-change 3s steps(5) infinite;
+  animation: gender-change 3s steps(5) infinite;
+}
+
+.pornography-sprite {
+  -webkit-animation: pornography-censor 3s steps(5) infinite;
+  animation: pornography-censor 3s steps(5) infinite;
+}
+
+.euthanasia-sprite {
+  -webkit-animation: injection 1s steps(5) infinite;
+  animation: injection 1s steps(5) infinite;
+}
+
+.brain-sprite {
+  -webkit-animation: ejection 5s steps(5) infinite;
+  animation: ejection 5s steps(5) infinite;
+}
+
+.idle-hero-sprite {
+  -webkit-animation: idle 1s steps(4) infinite;
+  animation: idle 1s steps(4) infinite;
+}
+
+.shocked-hero-sprite {
+  -webkit-animation: shock 3s steps(2) infinite;
+  animation: shock 3s steps(2) infinite;
+}
+
+.punching-hero-sprite {
+  -webkit-animation: punch 3s steps(3) infinite;
+  animation: punch 3s steps(3) infinite;
+}
+
+@keyframes injection {
+  from {
+    background-position: 0px 0px;
   }
   to {
-    background-position: -192px -36px;
+    background-position: -640px 0px;
   }
 }
 
-@keyframes walk-anim {
-  0% {
-    background-position: 0px -36px;
+@keyframes gender-change {
+  from {
+    background-position: 0px -128px;
   }
   to {
-    background-position: -192px -36px;
+    background-position: -640px -128px;
   }
 }
 
-.walk {
-  -webkit-animation: walk-anim 0.9s steps(6) infinite;
-  -moz-animation: walk-anim 0.9s steps(6) infinite;
-  -ms-animation: walk-anim 0.9s steps(6) infinite;
-  -o-animation: walk-anim 0.9s steps(6) infinite;
-  animation: walk-anim 0.9s steps(6) infinite;
-}
-
-@-webkit-keyframes shock-anim {
+@keyframes pornography-censor {
   from {
-    background-position: 0px -2px;
-  }
-  20%, 100% {
-    background-position: -128px -2px;
-  }
-}
-
-@keyframes shock-anim {
-  from {
-    background-position: 0px -2px;
-  }
-  20%, 100% {
-    background-position: -128px -2px;
-  }
-}
-
-.shock {
-  -webkit-animation: shock-anim 5s steps(4) infinite;
-  -moz-animation: shock-anim 5s steps(4) infinite;
-  -ms-animation: shock-anim 5s steps(4) infinite;
-  -o-animation: shock-anim 5s steps(4) infinite;
-  animation: shock-anim 5s steps(4) infinite;
-}
-
-@-webkit-keyframes jump-anim {
-  from {
-    background-position: 0px -68px;
+    background-position: 0px -256px;
   }
   to {
-    background-position: -128px -68px;
+    background-position: -640px -256px;
   }
 }
 
-@keyframes jump-anim {
+@keyframes ejection {
   from {
-    background-position: 0px -68px;
+    background-position: 0px -384px;
   }
   to {
-    background-position: -128px -68px;
+    background-position: -640px -384px;
   }
 }
 
-.jump {
-  -webkit-animation: jump-anim 0.9s steps(4) infinite;
-  -moz-animation: jump-anim 0.9s steps(4) infinite;
-  -ms-animation: jump-anim 0.9s steps(4) infinite;
-  -o-animation: jump-anim 0.9s steps(4) infinite;
-  animation: jump-anim 0.9s steps(4) infinite;
-}
-
-.success {
-  animation: none;
-  background-position: -158px -68px;
-}
-
-@-webkit-keyframes swim-anim {
+@keyframes idle {
   from {
-    background-position: 0px -100px;
+    background-position: 0px -512px;
   }
   to {
-    background-position: -192px -100px;
+    background-position: -512px -512px;
   }
 }
 
-@keyframes swim-anim {
+@keyframes shock {
   from {
-    background-position: 0px -100px;
+    background-position: -384px -512px;
   }
   to {
-    background-position: -192px -100px;
+    background-position: -640px -512px;
   }
 }
 
-.swim {
-  -webkit-animation: swim-anim 1s steps(6) infinite;
-  -moz-animation: swim-anim 1s steps(6) infinite;
-  -ms-animation: swim-anim 1s steps(6) infinite;
-  -o-animation: swim-anim 1s steps(6) infinite;
-  animation: swim-anim 1s steps(6) infinite;
-}
-
-@-webkit-keyframes punch-anim {
+@keyframes punch {
   from {
-    background-position: 0px -132px;
+    background-position: 0px -640px;
   }
   to {
-    background-position: -96px -132px;
+    background-position: -384px -640px;
   }
-}
-
-@keyframes punch-anim {
-  from {
-    background-position: 0px -132px;
-  }
-  to {
-    background-position: -96px -132px;
-  }
-}
-
-.punch {
-  -webkit-animation: punch-anim 1s steps(3) infinite;
-  -moz-animation: punch-anim 1s steps(3) infinite;
-  -ms-animation: punch-anim 1s steps(3) infinite;
-  -o-animation: punch-anim 1s steps(3) infinite;
-  animation: punch-anim 1s steps(3) infinite;
 }

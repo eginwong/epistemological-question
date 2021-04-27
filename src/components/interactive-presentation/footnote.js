@@ -29,7 +29,7 @@ function Footnote({ citation, color }) {
 
   return (
     <div
-      className={`bg-gray-200 mr-12 p-3 rounded-lg text-xs text-left whitespace-pre-line${customStyles}`}
+      className={`bg-gray-200 mr-12 p-3 rounded-lg text-xs text-left whitespace-pre-line ${customStyles}`}
     >
       <sup>*</sup>
       {footnoteFormatter(citation)}

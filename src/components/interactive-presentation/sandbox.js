@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import Sprite from "./sprite";
-import { SpriteStates } from "./spriteStates";
 import useKeyboardForMovement from "./hooks/useKeyboardForMovement";
 
 // NOTE: doesn't account for window resizing
@@ -31,10 +30,7 @@ function Sandbox({ maxWidth }) {
           Use the ◀️ and ▶️ cursor keys to move <b>Captain Philosophy</b>!
         </p>
       </div>
-      <Sprite
-        id={spriteId}
-        spriteState={velocity === 1 ? SpriteStates.IDLE : SpriteStates.WALK}
-      />
+      <Sprite id={spriteId} type={velocity === 1 ? "idle-hero" : ""} />
     </>
   );
 }

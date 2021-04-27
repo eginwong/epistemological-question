@@ -24,6 +24,7 @@
         "image": "starry-night",
         "transition": true
       },
+      "sprites": [{ "name": "idle-hero" }],
       "contents": {
         "notes": "Welcome to today's adventure of Captain Philosophy!\n\nWe will be exploring the mind-body problem, Cartesian Dualism, and Heidegger's question as the irreducible beginning."
       }
@@ -41,6 +42,7 @@
       "backgroundStyles": {
         "image": "alley"
       },
+      "sprites": [{ "name": "idle-hero" }],
       "contents": {
         "notes": "There's the captain. Oh wait, look out, the captain's surrounded!"
       }
@@ -49,14 +51,16 @@
       "backgroundStyles": {
         "image": "alley"
       },
+      "sprites": [{ "name": "idle-hero" }, { "name": "gender" }],
       "contents": {
         "notes": "Gender Dysphoria"
       }
     },
     {
       "backgroundStyles": {
-        "image": "inappropriate"
+        "image": "alley"
       },
+      "sprites": [{ "name": "idle-hero" }, { "name": "pornography" }],
       "contents": {
         "notes": "Human Objectification Through Pornography and Hook-up Culture"
       }
@@ -65,6 +69,7 @@
       "backgroundStyles": {
         "image": "alley"
       },
+      "sprites": [{ "name": "idle-hero" }, { "name": "euthanasia" }],
       "contents": {
         "notes": "Euthanasia"
       }
@@ -74,19 +79,25 @@
         "image": "alley",
         "transition": true
       },
+      "sprites": [
+        { "name": "shocked-hero" },
+        { "name": "gender" },
+        { "name": "pornography" },
+        { "name": "euthanasia" }
+      ],
       "contents": {
         "notes": "Will our hero prevail against these modern day thugs?"
       }
     },
     {
-      "backgroundStyles": {
-        "image": "question"
-      },
+      "type": "emphasis",
       "contents": {
+        "text": "?",
         "notes": "What's that, Captain Philosophy? You say the answer to these modern day dilemmas is the question?"
       }
     },
     {
+      "type": "emphasis",
       "styles": {
         "color": "blue"
       },
@@ -108,7 +119,7 @@
       }
     },
     {
-      "type": "list",
+      "type": "v-list",
       "backgroundStyles": {
         "image": "dark-split"
       },
@@ -118,7 +129,7 @@
       }
     },
     {
-      "type": "list",
+      "type": "v-list",
       "backgroundStyles": {
         "image": "dark-split",
         "transition": true
@@ -142,7 +153,7 @@
       }
     },
     {
-      "type": "list",
+      "type": "v-list",
       "backgroundStyles": {
         "image": "dark-split",
         "transition": true
@@ -191,27 +202,19 @@
       "backgroundStyles": {
         "image": "descartes"
       },
-      "styles": {
-        "color": "white",
-        "textColor": "yellow"
-      },
       "contents": {
-        "text": "Skepticism\nAll [tw I can see and observe] is [tw can be deceiving].\nAll [tw can be deceiving] is [twi not real].\n\n> All [tw I can see and observe] is [twi not real].",
+        "text": "Skepticism\n\nAll [tw I can see and observe] is [tw can be deceiving].\nAll [tw can be deceiving] is [twi not real].\n\n> All [tw I can see and observe] is [twi not real].",
         "notes": "What is real then? Cogito ergo sum, Descartes said."
       }
     },
     {
-      "backgroundStyles": {
-        "image": "mind-body-explosion"
-      },
+      "sprites": [{ "name": "brain" }],
       "contents": {
         "notes": "We begin in the mind. It is here that we encounter our first challenge. Modern culture suggests that our mind is not our body. If that is so, it doesn't matter what happens to our body. We can be different genders, species, anything that we can think of.\n\nNote: Plato's Forms supposed something similar\nNote: Berkeley argues that reality exists purely in minds and their ideas"
-      },
-      "styles": {
-        "spriteMovement": "shock"
       }
     },
     {
+      "type": "h-list",
       "backgroundStyles": {
         "image": "chalkboard"
       },
@@ -219,7 +222,10 @@
         "textColor": "green"
       },
       "contents": {
-        "text": "1. Is all that we know in our minds only? Do we have a body?\n(Skepticism)",
+        "cards": [
+          "[Skepticism]\nWhat if all we know is only in our minds? Do we have a body?"
+        ],
+        "highlight": 0,
         "notes": "Well, skepticism seems to support the idea of a mind-only reality. What about the body-only reality?"
       }
     },
@@ -237,15 +243,13 @@
         "image": "physicalism",
         "transition": true
       },
-      "styles": {
-        "color": "white"
-      },
       "contents": {
-        "text": "Physicalism\nAll [twi real] is [twi composed of my sense experiences and thoughts].\nAll [twi composed of my sense experiences and thoughts] is [a collection of neurochemicals in my brain].\nAll [collection of neurochemicals in my brain] is [twi physical].\n\n> All [twi real] is [twi physical].",
+        "text": "Physicalism\n\nAll [twi real] is [twi composed of my sense experiences and thoughts].\nAll [twi composed of my sense experiences and thoughts] is [a collection of neurochemicals in my brain].\nAll [collection of neurochemicals in my brain] is [twi physical].\n\n> All [twi real] is [twi physical].",
         "notes": "Our aim isn't an intensive deep-dive into physicalism, so we will stop here."
       }
     },
     {
+      "type": "h-list",
       "backgroundStyles": {
         "image": "chalkboard"
       },
@@ -254,7 +258,11 @@
         "color": "white"
       },
       "contents": {
-        "text": "1. Is all that we know in our minds only? Do we have a body?\n(Skepticism)\n2. What if there is no mind and we are all body?\n(Physicalism)",
+        "cards": [
+          "[Skepticism]\nWhat if all we know is only in our minds? Do we have a body?",
+          "[Physicalism]\nWhat if there is no mind and only body?"
+        ],
+        "highlight": 1,
         "notes": "We have one more area to explore before we check back in with Captain Philosophy."
       }
     },
@@ -303,6 +311,7 @@
       }
     },
     {
+      "type": "h-list",
       "backgroundStyles": {
         "image": "chalkboard"
       },
@@ -311,7 +320,12 @@
         "color": "white"
       },
       "contents": {
-        "text": "1. Is all that we know in our minds only? Do we have a body?\n(Skepticism)\n2. What if there is no mind and we are all body?\n(Physicalism)\n3. If both mind and body are real, how are they connected?\n(Cartesian Dualism)",
+        "cards": [
+          "[Skepticism]\nWhat if all we know is only in our minds? Do we have a body?",
+          "[Physicalism]\nWhat if there is no mind and only body?",
+          "[Cartesian Dualism]\nIf both mind and body are real, how are they connected?"
+        ],
+        "highlight": 2,
         "notes": "What's that, Captain? something something Heidegger? Oh, why didn't we think of that sooner?"
       }
     },
@@ -395,6 +409,7 @@
       }
     },
     {
+      "type": "h-list",
       "backgroundStyles": {
         "image": "chalkboard"
       },
@@ -402,7 +417,12 @@
         "textColor": "green"
       },
       "contents": {
-        "text": "highlight-1",
+        "cards": [
+          "[Skepticism]\nWhat if all we know is only in our minds? Do we have a body?",
+          "[Physicalism]\nWhat if there is no mind and only body?",
+          "[Cartesian Dualism]\nIf both mind and body are real, how are they connected?"
+        ],
+        "highlight": 0,
         "notes": "Looking at #1, knowledge cannot occur with merely the \"knower\". We need an other so that we can identify something to be known. Even if we question whether or not we exist, that implies that there is something out there which must be different. If my existence was all there ever was in a particular universe, I would never question the \"other\" because there couldn't be one. Even Descartes, in Meditations, uses the idea of a deceiving god* to represent some sort of other to compare with him self.",
         "footnotes": [
           {
@@ -418,6 +438,7 @@
       }
     },
     {
+      "type": "h-list",
       "backgroundStyles": {
         "image": "chalkboard"
       },
@@ -425,11 +446,17 @@
         "textColor": "green"
       },
       "contents": {
-        "text": "highlight-2",
+        "cards": [
+          "[Skepticism]\nWhat if all we know is only in our minds? Do we have a body?",
+          "[Physicalism]\nWhat if there is no mind and only body?",
+          "[Cartesian Dualism]\nIf both mind and body are real, how are they connected?"
+        ],
+        "highlight": 1,
         "notes": "For #2, the questioning existence of man cannot be answered by the \"known\" in isolation. A body doesn't question. It is a bag of meat. Bags of meat do not wonder or have questions. Our own personal experiences and subjectivity do not agree with the idea of physicalism. As we can see in epistemology, we need all three actors of the question to arrive at knowledge. We need the known, knower, and the relationship by which we come to know."
       }
     },
     {
+      "type": "h-list",
       "backgroundStyles": {
         "image": "chalkboard"
       },
@@ -437,7 +464,12 @@
         "textColor": "green"
       },
       "contents": {
-        "text": "highlight-3",
+        "cards": [
+          "[Skepticism]\nWhat if all we know is only in our minds? Do we have a body?",
+          "[Physicalism]\nWhat if there is no mind and only body?",
+          "[Cartesian Dualism]\nIf both mind and body are real, how are they connected?"
+        ],
+        "highlight": 2,
         "notes": "This is the million-dollar question! Heidegger, Ortega, and Marcel suggest that we are beings-by-participation. The melding of mind and body are inherent in what it means to be a being-in-the-world. Marcel uses the term \"being-by-participation\".*",
         "footnotes": [
           {
@@ -453,17 +485,23 @@
       }
     },
     {
+      "type": "emphasis",
       "contents": {
+        "text": "Aristotle's Hylemorphism",
         "notes": "In Aristotle's work, he says that all living beings are hylemorphic - a combination of matter and form. This combination is so tightly blended together that it becomes one entity, and that is man."
       }
     },
     {
+      "type": "emphasis",
       "contents": {
+        "text": "Aristotle's Hylemorphism:\nMan as body AND soul",
         "notes": "Man is not matter (body) nor form (mind/soul) alone, but its joining together into this one living and breathing man in the world, in time."
       }
     },
     {
+      "type": "emphasis",
       "contents": {
+        "text": "...",
         "notes": "It sounds like the Cap'n's almost finished up. Let's check back in with him."
       }
     },
@@ -480,10 +518,7 @@
       }
     },
     {
-      "backgroundStyles": {
-        "image": "alley",
-        "transition": true
-      },
+      "sprites": [{ "name": "punching-hero" }, { "name": "gender" }],
       "styles": {
         "color": "purple"
       },
@@ -493,10 +528,7 @@
       }
     },
     {
-      "backgroundStyles": {
-        "image": "inappropriate",
-        "vTransition": true
-      },
+      "sprites": [{ "name": "punching-hero" }, { "name": "pornography" }],
       "styles": {
         "color": "purple"
       },
@@ -506,10 +538,7 @@
       }
     },
     {
-      "backgroundStyles": {
-        "image": "alley",
-        "transition": true
-      },
+      "sprites": [{ "name": "punching-hero" }, { "name": "euthanasia" }],
       "styles": {
         "color": "purple"
       },
@@ -523,6 +552,7 @@
         "image": "sunset",
         "transition": true
       },
+      "sprites": [{ "name": "idle-hero" }],
       "styles": {
         "color": "green"
       },
@@ -532,6 +562,7 @@
       }
     },
     {
+      "type": "emphasis",
       "backgroundStyles": {
         "image": "sunset"
       },
@@ -540,6 +571,7 @@
       }
     },
     {
+      "type": "emphasis",
       "contents": {
         "text": "Fin",
         "notes": "I said \"FIN\""
