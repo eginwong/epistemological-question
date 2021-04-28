@@ -3,6 +3,15 @@ import PropTypes from "prop-types";
 import Footnote from "./footnote";
 import { Card, NumberedCard } from "./card";
 
+/**
+ * need to save some css from getting stripped!
+ * PurgeCSS:
+ * bg-red-400
+ * bg-green-400
+ * bg-purple-400
+ * bg-blue-400
+ */
+
 function SlideContents({ type, contents, styles }) {
   let customStyles = "";
   customStyles += styles.color ? ` bg-${styles.color}-400` : "";

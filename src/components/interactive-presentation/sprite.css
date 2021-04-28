@@ -26,46 +26,76 @@
   background-image: url("../../images/spritesheets/spritesheet.png");
   background-repeat: no-repeat;
   image-rendering: pixelated;
-  transform: scale(var(--sprite-size));
 }
 
 .sprite-centered {
   transform: translateY(-100%) scale(var(--sprite-size));
 }
 
+.large-sprite {
+  transform: translateY(-100%) scale(calc(var(--sprite-size) * 3));
+}
+
 .gender-sprite {
+  background-position: 0px -128px;
   -webkit-animation: gender-change 3s steps(5) infinite;
   animation: gender-change 3s steps(5) infinite;
 }
 
 .pornography-sprite {
+  background-position: 0px -256px;
   -webkit-animation: pornography-censor 3s steps(5) infinite;
   animation: pornography-censor 3s steps(5) infinite;
 }
 
 .euthanasia-sprite {
+  background-position: 0px 0px;
   -webkit-animation: injection 1s steps(5) infinite;
   animation: injection 1s steps(5) infinite;
 }
 
 .brain-sprite {
-  -webkit-animation: ejection 5s steps(5) infinite;
-  animation: ejection 5s steps(5) infinite;
+  background-position: 0px -384px;
+  -webkit-animation: ejection 4s steps(4) forwards;
+  animation: ejection 4s steps(4) forwards;
 }
 
 .idle-hero-sprite {
+  background-position: 0px -512px;
   -webkit-animation: idle 1s steps(4) infinite;
   animation: idle 1s steps(4) infinite;
 }
 
 .shocked-hero-sprite {
+  background-position: -384px -512px;
   -webkit-animation: shock 3s steps(2) infinite;
   animation: shock 3s steps(2) infinite;
 }
 
 .punching-hero-sprite {
-  -webkit-animation: punch 3s steps(3) infinite;
-  animation: punch 3s steps(3) infinite;
+  background-position: 0px -640px;
+  -webkit-animation: punch 2s steps(2) 1 forwards;
+  animation: punch 2s steps(2) 1 forwards;
+}
+
+.success-hero-sprite {
+  background-position: -384px -512px;
+  -webkit-animation: success 2s steps(1) 8 forwards;
+  animation: success 2s steps(1) 8 forwards;
+}
+
+.defeated-sprite {
+  -webkit-animation: defeat 2s linear 2s forwards;
+  animation: defeat 2s linear 2s forwards;
+}
+
+@keyframes defeat {
+  90% {
+    transform: translate(1300px, -500px) scale(0.1) rotate(360deg);
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes injection {
@@ -100,7 +130,7 @@
     background-position: 0px -384px;
   }
   to {
-    background-position: -640px -384px;
+    background-position: -512px -384px;
   }
 }
 
@@ -125,6 +155,15 @@
 @keyframes punch {
   from {
     background-position: 0px -640px;
+  }
+  to {
+    background-position: -256px -640px;
+  }
+}
+
+@keyframes success {
+  from {
+    background-position: -384px -512px;
   }
   to {
     background-position: -384px -640px;

@@ -208,7 +208,7 @@
       }
     },
     {
-      "sprites": [{ "name": "brain" }],
+      "sprites": [{ "name": "brain", "styles": { "enlarge": true } }],
       "contents": {
         "notes": "We begin in the mind. It is here that we encounter our first challenge. Modern culture suggests that our mind is not our body. If that is so, it doesn't matter what happens to our body. We can be different genders, species, anything that we can think of.\n\nNote: Plato's Forms supposed something similar\nNote: Berkeley argues that reality exists purely in minds and their ideas"
       }
@@ -518,7 +518,10 @@
       }
     },
     {
-      "sprites": [{ "name": "punching-hero" }, { "name": "gender" }],
+      "sprites": [
+        { "name": "punching-hero" },
+        { "name": "gender", "styles": { "defeated": true } }
+      ],
       "styles": {
         "color": "purple"
       },
@@ -528,7 +531,10 @@
       }
     },
     {
-      "sprites": [{ "name": "punching-hero" }, { "name": "pornography" }],
+      "sprites": [
+        { "name": "punching-hero" },
+        { "name": "pornography", "styles": { "defeated": true } }
+      ],
       "styles": {
         "color": "purple"
       },
@@ -538,7 +544,10 @@
       }
     },
     {
-      "sprites": [{ "name": "punching-hero" }, { "name": "euthanasia" }],
+      "sprites": [
+        { "name": "punching-hero" },
+        { "name": "euthanasia", "styles": { "defeated": true } }
+      ],
       "styles": {
         "color": "purple"
       },
@@ -552,7 +561,7 @@
         "image": "sunset",
         "transition": true
       },
-      "sprites": [{ "name": "idle-hero" }],
+      "sprites": [{ "name": "success-hero" }],
       "styles": {
         "color": "green"
       },

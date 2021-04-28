@@ -30,7 +30,11 @@ function Sandbox({ maxWidth }) {
           Use the ◀️ and ▶️ cursor keys to move <b>Captain Philosophy</b>!
         </p>
       </div>
-      <Sprite id={spriteId} type={velocity === 1 ? "idle-hero" : ""} />
+      <Sprite
+        id={spriteId}
+        type={velocity === 1 ? "idle-hero" : "success-hero"}
+        styles={{ centered: false }}
+      />
     </>
   );
 }

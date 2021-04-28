@@ -13,19 +13,6 @@ import starryNight from "../../images/backgrounds/starry-night.jpg";
 import sunset from "../../images/backgrounds/sunset.jpg";
 import triuneKnowledge from "../../images/backgrounds/triune-knowledge.png";
 
-/**
- * need to save some css from getting stripped!
- * PurgeCSS:
- * bg-red-400
- * bg-green-400
- * bg-yellow-400
- * bg-gray-400
- * bg-purple-400
- * bg-indigo-400
- * bg-blue-400
- * bg-pink-400
- */
-
 const mapBackgroundImages = (key) => {
   switch (key) {
     case "alley":
