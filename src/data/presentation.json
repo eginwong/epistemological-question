@@ -60,7 +60,7 @@
       "backgroundStyles": {
         "image": "alley"
       },
-      "sprites": [{ "name": "idle-hero" }, { "name": "pornography" }],
+      "sprites": [{ "name": "idle-hero" }, { "name": "pornography", "styles": { "enlarge": true } }],
       "contents": {
         "notes": "Human Objectification Through Pornography and Hook-up Culture"
       }
@@ -82,7 +82,7 @@
       "sprites": [
         { "name": "shocked-hero" },
         { "name": "gender" },
-        { "name": "pornography" },
+        { "name": "pornography", "styles": { "enlarge": true } },
         { "name": "euthanasia" }
       ],
       "contents": {
@@ -254,8 +254,7 @@
         "image": "chalkboard"
       },
       "styles": {
-        "textColor": "green",
-        "color": "white"
+        "textColor": "green"
       },
       "contents": {
         "cards": [
@@ -270,9 +269,6 @@
       "type": "bottom",
       "backgroundStyles": {
         "image": "mind-body-schematics"
-      },
-      "styles": {
-        "color": "white"
       },
       "contents": {
         "notes": "Back to Descartes! He began his \"Meditations\" with skepticism but actually concluded with a more nuanced position on the mind-body problem. He was certain that the mind AND the body are real, but he couldn't explain how. He suggested that the two are linked together through the pineal gland* in the brain.",
@@ -292,9 +288,6 @@
       "type": "bottom",
       "backgroundStyles": {
         "image": "mind-body-schematics"
-      },
-      "styles": {
-        "color": "white"
       },
       "contents": {
         "notes": "Unfortunately that doesn't answer all our questions about just how the mind and body relate or even how they communicate. How does a physical property manifest itself into a mental state? What is the mechanism to cross the bridge between the two?",
@@ -316,8 +309,7 @@
         "image": "chalkboard"
       },
       "styles": {
-        "textColor": "green",
-        "color": "white"
+        "textColor": "green"
       },
       "contents": {
         "cards": [
@@ -334,9 +326,6 @@
       "backgroundStyles": {
         "image": "silhouettes",
         "transition": true
-      },
-      "styles": {
-        "color": "white"
       },
       "contents": {
         "notes": "Heidegger says that man falls into a category of his own - that of a being-in-a-world. He argues that the notion of a being (or man) cannot exist outside of the world. There is never a possibility for a being outside of the world because the two are united.* \n\nOrtega says that existing is always co-existing. Language is an example of a construct that is inherently social.",
@@ -356,9 +345,6 @@
     },
     {
       "type": "emphasis",
-      "styles": {
-        "color": "white"
-      },
       "contents": {
         "text": "The answer is the question.",
         "notes": "These three gentlemen, Heidegger, Ortega, and Gallagher have the answer. The answer is the question. Or rather, the fact that man is a questioning being is the bridge between the mental and the physical."
@@ -366,9 +352,6 @@
     },
     {
       "type": "emphasis",
-      "styles": {
-        "color": "white"
-      },
       "contents": {
         "text": "Question?",
         "notes": "Gallagher asks us to think - what is a question composed of? A question needs something to question about. But to have something to question about, we need some sort of subject that does the questioning. All-in-all, we have three parts to the question."
@@ -456,6 +439,14 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "triune-knowledge"
+      },
+      "contents": {
+        "notes": "Again, we need both knower and known to come to knowledge."
+      }
+    },
+    {
       "type": "h-list",
       "backgroundStyles": {
         "image": "chalkboard"
@@ -486,16 +477,15 @@
     },
     {
       "type": "emphasis",
-      "contents": {
-        "text": "Aristotle's Hylemorphism",
-        "notes": "In Aristotle's work, he says that all living beings are hylemorphic - a combination of matter and form. This combination is so tightly blended together that it becomes one entity, and that is man."
-      }
-    },
-    {
-      "type": "emphasis",
+      "backgroundStyles": {
+        "image": "hylemorphic"
+      },
+      "styles": {
+        "color": "blue"
+      },
       "contents": {
         "text": "Aristotle's Hylemorphism:\nMan as body AND soul",
-        "notes": "Man is not matter (body) nor form (mind/soul) alone, but its joining together into this one living and breathing man in the world, in time."
+        "notes": "In Aristotle's work, he says that all living beings are hylemorphic - a combination of matter and form. This combination is so tightly blended together that it becomes one entity, and that is man.\n\nMan is not matter (body) nor form (mind/soul) alone, but its joining together into this one living and breathing man in the world, in time."
       }
     },
     {
@@ -518,6 +508,9 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "alley"
+      },
       "sprites": [
         { "name": "punching-hero" },
         { "name": "gender", "styles": { "defeated": true } }
@@ -531,9 +524,12 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "alley"
+      },
       "sprites": [
         { "name": "punching-hero" },
-        { "name": "pornography", "styles": { "defeated": true } }
+        { "name": "pornography", "styles": { "defeated": true, "enlarge": true } }
       ],
       "styles": {
         "color": "purple"
@@ -544,6 +540,9 @@
       }
     },
     {
+      "backgroundStyles": {
+        "image": "alley"
+      },
       "sprites": [
         { "name": "punching-hero" },
         { "name": "euthanasia", "styles": { "defeated": true } }

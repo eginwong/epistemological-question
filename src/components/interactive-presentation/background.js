@@ -6,6 +6,7 @@ import city from "../../images/backgrounds/city.png";
 import chalkboard from "../../images/backgrounds/chalkboard.png";
 import darkSplit from "../../images/backgrounds/dark-1-2.png";
 import descartes from "../../images/backgrounds/rene-descartes.jpg";
+import hylemorphic from "../../images/backgrounds/hylemorphic.png";
 import mindBodySchematics from "../../images/backgrounds/mind-body-schematics.jpg";
 import physicalism from "../../images/backgrounds/physicalism.jpg";
 import silhouettes from "../../images/backgrounds/silhouettes.jpg";
@@ -25,6 +26,8 @@ const mapBackgroundImages = (key) => {
       return darkSplit;
     case "descartes":
       return descartes;
+    case "hylemorphic":
+      return hylemorphic;
     case "mind-body-schematics":
       return mindBodySchematics;
     case "physicalism":
