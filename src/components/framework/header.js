@@ -57,6 +57,10 @@ function Header() {
         >
           {[
             {
+              route: `/recording`,
+              title: `Recording`,
+            },
+            {
               route: `/presentation`,
               title: `Presentation`,
             },
